@@ -38,7 +38,6 @@
 				<li><a href="class-Arya.ChunkedFileBody.html">ChunkedFileBody</a></li>
 				<li><a href="class-Arya.FileBody.html">FileBody</a></li>
 				<li><a href="class-Arya.JsonBody.html">JsonBody</a></li>
-				<li><a href="class-Arya.Request.html">Request</a></li>
 				<li class="active"><a href="class-Arya.Response.html">Response</a></li>
 			</ul>
 
@@ -122,7 +121,7 @@
 		<b>Namespace:</b> Arya<br>
 		
 
-		<b>Located at</b> <a href="source-class-Arya.Response.html#5-690" title="Go to source code">esponse.php</a><br>
+		<b>Located at</b> <a href="source-class-Arya.Response.html#5-729" title="Go to source code">esponse.php</a><br>
 	</div>
 
 
@@ -141,7 +140,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Arya.Response.html#22-26" title="Go to source code">__construct</a>( <span>array <var>$map</var> = []</span> )</code>
+		<code><a href="source-class-Arya.Response.html#22-29" title="Go to source code">__construct</a>( <span>array <var>$map</var> = []</span> )</code>
 
 		<div class="description short">
 			
@@ -153,6 +152,12 @@
 
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$map</var></dt>
+					<dd>
+</dd>
+				</dl></div>
 
 
 
@@ -173,7 +178,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setStatus">#</a>
-		<code><a href="source-class-Arya.Response.html#28-47" title="Go to source code">setStatus</a>( <span>integer <var>$statusCode</var></span> )</code>
+		<code><a href="source-class-Arya.Response.html#31-50" title="Go to source code">setStatus</a>( <span>integer <var>$statusCode</var></span> )</code>
 
 		<div class="description short">
 			<p>Assign the response status code (default: 200)</p>
@@ -220,7 +225,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setReasonPhrase">#</a>
-		<code><a href="source-class-Arya.Response.html#49-66" title="Go to source code">setReasonPhrase</a>( <span>string <var>$reasonPhrase</var></span> )</code>
+		<code><a href="source-class-Arya.Response.html#52-69" title="Go to source code">setReasonPhrase</a>( <span>string <var>$reasonPhrase</var></span> )</code>
 
 		<div class="description short">
 			<p>Assign an optional reason phrase (e.g. Not Found) to accompany the status code</p>
@@ -267,7 +272,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setAllHeaders">#</a>
-		<code><a href="source-class-Arya.Response.html#68-84" title="Go to source code">setAllHeaders</a>( <span>array <var>$headerArray</var></span> )</code>
+		<code><a href="source-class-Arya.Response.html#71-87" title="Go to source code">setAllHeaders</a>( <span>array <var>$headerArray</var></span> )</code>
 
 		<div class="description short">
 			<p>Set multiple headers from a key-value array</p>
@@ -317,7 +322,7 @@ Header field names are NOT case-sensitive.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setHeader">#</a>
-		<code><a href="source-class-Arya.Response.html#86-128" title="Go to source code">setHeader</a>( <span>string <var>$field</var></span>, <span>string <var>$value</var></span> )</code>
+		<code><a href="source-class-Arya.Response.html#89-131" title="Go to source code">setHeader</a>( <span>string <var>$field</var></span>, <span>string <var>$value</var></span> )</code>
 
 		<div class="description short">
 			<p>Assign a header value</p>
@@ -370,7 +375,7 @@ Header field names are NOT case-sensitive.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setAllHeaderLines">#</a>
-		<code><a href="source-class-Arya.Response.html#186-199" title="Go to source code">setAllHeaderLines</a>( <span>array <var>$lines</var></span> )</code>
+		<code><a href="source-class-Arya.Response.html#189-202" title="Go to source code">setAllHeaderLines</a>( <span>array <var>$lines</var></span> )</code>
 
 		<div class="description short">
 			<p>Assign multiple raw header lines at once</p>
@@ -417,7 +422,7 @@ Header field names are NOT case-sensitive.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setHeaderLine">#</a>
-		<code><a href="source-class-Arya.Response.html#201-216" title="Go to source code">setHeaderLine</a>( <span>string <var>$line</var></span> )</code>
+		<code><a href="source-class-Arya.Response.html#204-219" title="Go to source code">setHeaderLine</a>( <span>string <var>$line</var></span> )</code>
 
 		<div class="description short">
 			<p>Assign a raw header line of the form "Some-Header-Field: my value"</p>
@@ -467,7 +472,7 @@ Header field names are NOT case-sensitive.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_addAllHeaderLines">#</a>
-		<code><a href="source-class-Arya.Response.html#218-231" title="Go to source code">addAllHeaderLines</a>( <span>array <var>$lines</var></span> )</code>
+		<code><a href="source-class-Arya.Response.html#221-234" title="Go to source code">addAllHeaderLines</a>( <span>array <var>$lines</var></span> )</code>
 
 		<div class="description short">
 			<p>Append multiple raw header lines of the form "Some-Header-Field: my value"</p>
@@ -514,7 +519,7 @@ Header field names are NOT case-sensitive.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_addHeaderLine">#</a>
-		<code><a href="source-class-Arya.Response.html#233-248" title="Go to source code">addHeaderLine</a>( <span>string <var>$line</var></span> )</code>
+		<code><a href="source-class-Arya.Response.html#236-251" title="Go to source code">addHeaderLine</a>( <span>string <var>$line</var></span> )</code>
 
 		<div class="description short">
 			<p>Appends a raw header line of the form "Some-Header-Field: my value"</p>
@@ -564,7 +569,7 @@ Header field names are NOT case-sensitive.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_addHeader">#</a>
-		<code><a href="source-class-Arya.Response.html#270-293" title="Go to source code">addHeader</a>( <span>string <var>$field</var></span>, <span>string <var>$value</var></span> )</code>
+		<code><a href="source-class-Arya.Response.html#273-296" title="Go to source code">addHeader</a>( <span>string <var>$field</var></span>, <span>string <var>$value</var></span> )</code>
 
 		<div class="description short">
 			<p>Append a header value</p>
@@ -617,7 +622,7 @@ Header field names are NOT case-sensitive.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_hasHeader">#</a>
-		<code><a href="source-class-Arya.Response.html#295-307" title="Go to source code">hasHeader</a>( <span>string <var>$field</var></span> )</code>
+		<code><a href="source-class-Arya.Response.html#298-310" title="Go to source code">hasHeader</a>( <span>string <var>$field</var></span> )</code>
 
 		<div class="description short">
 			<p>Does the response currently have a value for the specified header field?</p>
@@ -661,7 +666,7 @@ Header field names are NOT case-sensitive.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_removeHeader">#</a>
-		<code><a href="source-class-Arya.Response.html#309-331" title="Go to source code">removeHeader</a>( <span>string <var>$field</var></span> )</code>
+		<code><a href="source-class-Arya.Response.html#312-334" title="Go to source code">removeHeader</a>( <span>string <var>$field</var></span> )</code>
 
 		<div class="description short">
 			<p>Removes assigned headers for the specified field</p>
@@ -706,7 +711,7 @@ Header field names are NOT case-sensitive.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_removeAllHeaders">#</a>
-		<code><a href="source-class-Arya.Response.html#333-344" title="Go to source code">removeAllHeaders</a>( )</code>
+		<code><a href="source-class-Arya.Response.html#336-347" title="Go to source code">removeAllHeaders</a>( )</code>
 
 		<div class="description short">
 			<p>Removes all assigned headers</p>
@@ -743,7 +748,7 @@ Header field names are NOT case-sensitive.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setCookie">#</a>
-		<code><a href="source-class-Arya.Response.html#346-370" title="Go to source code">setCookie</a>( <span>string <var>$name</var></span>, <span>string <var>$value</var> = <span class="php-quote">''</span></span>, <span>array <var>$options</var> = []</span> )</code>
+		<code><a href="source-class-Arya.Response.html#349-373" title="Go to source code">setCookie</a>( <span>string <var>$name</var></span>, <span>string <var>$value</var> = <span class="php-quote">''</span></span>, <span>array <var>$options</var> = []</span> )</code>
 
 		<div class="description short">
 			<p>Set a cookie value to be sent with the response.</p>
@@ -796,7 +801,7 @@ beyond the name-value pair may be specified using individual keys in the $option
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setRawCookie">#</a>
-		<code><a href="source-class-Arya.Response.html#372-384" title="Go to source code">setRawCookie</a>( <span>string <var>$name</var></span>, <span>string <var>$value</var> = <span class="php-quote">''</span></span>, <span>array <var>$options</var> = []</span> )</code>
+		<code><a href="source-class-Arya.Response.html#375-387" title="Go to source code">setRawCookie</a>( <span>string <var>$name</var></span>, <span>string <var>$value</var> = <span class="php-quote">''</span></span>, <span>array <var>$options</var> = []</span> )</code>
 
 		<div class="description short">
 			<p>Same as Response::setCookie except that the cookie value will not be automatically urlencoded</p>
@@ -845,7 +850,7 @@ beyond the name-value pair may be specified using individual keys in the $option
 
 		<td class="name"><div>
 		<a class="anchor" href="#_hasCookie">#</a>
-		<code><a href="source-class-Arya.Response.html#412-420" title="Go to source code">hasCookie</a>( <span>string <var>$name</var></span> )</code>
+		<code><a href="source-class-Arya.Response.html#415-423" title="Go to source code">hasCookie</a>( <span>string <var>$name</var></span> )</code>
 
 		<div class="description short">
 			<p>Has a cookie with this name been assigned to the response?</p>
@@ -887,7 +892,7 @@ beyond the name-value pair may be specified using individual keys in the $option
 
 		<td class="name"><div>
 		<a class="anchor" href="#_removeCookie">#</a>
-		<code><a href="source-class-Arya.Response.html#422-432" title="Go to source code">removeCookie</a>( <span>string <var>$name</var></span> )</code>
+		<code><a href="source-class-Arya.Response.html#425-435" title="Go to source code">removeCookie</a>( <span>string <var>$name</var></span> )</code>
 
 		<div class="description short">
 			<p>Remove an assigned cookie matching the specified name</p>
@@ -930,7 +935,7 @@ beyond the name-value pair may be specified using individual keys in the $option
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getStatus">#</a>
-		<code><a href="source-class-Arya.Response.html#434-441" title="Go to source code">getStatus</a>( )</code>
+		<code><a href="source-class-Arya.Response.html#437-444" title="Go to source code">getStatus</a>( )</code>
 
 		<div class="description short">
 			<p>Get the status code for this response</p>
@@ -966,7 +971,7 @@ beyond the name-value pair may be specified using individual keys in the $option
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getReasonPhrase">#</a>
-		<code><a href="source-class-Arya.Response.html#443-450" title="Go to source code">getReasonPhrase</a>( )</code>
+		<code><a href="source-class-Arya.Response.html#446-453" title="Go to source code">getReasonPhrase</a>( )</code>
 
 		<div class="description short">
 			<p>Get the assigned reason phrase for this response</p>
@@ -1002,7 +1007,7 @@ beyond the name-value pair may be specified using individual keys in the $option
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getHeader">#</a>
-		<code><a href="source-class-Arya.Response.html#452-477" title="Go to source code">getHeader</a>( <span>string <var>$field</var></span> )</code>
+		<code><a href="source-class-Arya.Response.html#455-480" title="Go to source code">getHeader</a>( <span>string <var>$field</var></span> )</code>
 
 		<div class="description short">
 			<p>Retrieve assigned header values for the specified field</p>
@@ -1051,7 +1056,7 @@ multiple values are assigned for the field an array of scalars is returned.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setBody">#</a>
-		<code><a href="source-class-Arya.Response.html#479-501" title="Go to source code">setBody</a>( <span>null|string|callable|<code><a href="class-Arya.Body.html">Arya\Body</a></code> <var>$body</var></span> )</code>
+		<code><a href="source-class-Arya.Response.html#482-504" title="Go to source code">setBody</a>( <span>null|string|callable|<code><a href="class-Arya.Body.html">Arya\Body</a></code> <var>$body</var></span> )</code>
 
 		<div class="description short">
 			<p>Assign a response entity body</p>
@@ -1098,7 +1103,7 @@ multiple values are assigned for the field an array of scalars is returned.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getAllHeaders">#</a>
-		<code><a href="source-class-Arya.Response.html#503-515" title="Go to source code">getAllHeaders</a>( )</code>
+		<code><a href="source-class-Arya.Response.html#506-518" title="Go to source code">getAllHeaders</a>( )</code>
 
 		<div class="description short">
 			<p>Retrieve an array mapping header field names to their assigned values</p>
@@ -1134,7 +1139,7 @@ multiple values are assigned for the field an array of scalars is returned.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getAllHeaderLines">#</a>
-		<code><a href="source-class-Arya.Response.html#517-531" title="Go to source code">getAllHeaderLines</a>( )</code>
+		<code><a href="source-class-Arya.Response.html#520-534" title="Go to source code">getAllHeaderLines</a>( )</code>
 
 		<div class="description short">
 			<p>Retrieve an array of header strings appropriate for output</p>
@@ -1170,7 +1175,7 @@ multiple values are assigned for the field an array of scalars is returned.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getBody">#</a>
-		<code><a href="source-class-Arya.Response.html#533-540" title="Go to source code">getBody</a>( )</code>
+		<code><a href="source-class-Arya.Response.html#536-543" title="Go to source code">getBody</a>( )</code>
 
 		<div class="description short">
 			<p>Retrieve the entity body assigned for this response</p>
@@ -1206,7 +1211,7 @@ multiple values are assigned for the field an array of scalars is returned.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_hasBody">#</a>
-		<code><a href="source-class-Arya.Response.html#542-549" title="Go to source code">hasBody</a>( )</code>
+		<code><a href="source-class-Arya.Response.html#545-552" title="Go to source code">hasBody</a>( )</code>
 
 		<div class="description short">
 			<p>Is an entity body assigned for this response?</p>
@@ -1242,7 +1247,7 @@ multiple values are assigned for the field an array of scalars is returned.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_import">#</a>
-		<code><a href="source-class-Arya.Response.html#551-567" title="Go to source code">import</a>( <span><code><a href="class-Arya.Response.html">Arya\Response</a></code> <var>$response</var></span> )</code>
+		<code><a href="source-class-Arya.Response.html#554-570" title="Go to source code">import</a>( <span><code><a href="class-Arya.Response.html">Arya\Response</a></code> <var>$response</var></span> )</code>
 
 		<div class="description short">
 			<p>Import values from external Response instance</p>
@@ -1281,26 +1286,40 @@ new Response instance.</p>
 		<td class="attributes"><code>
 			 public 
 
-			
+			<code><a href="class-Arya.Response.html">Arya\Response</a></code>
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_importArray">#</a>
-		<code><a href="source-class-Arya.Response.html#569-579" title="Go to source code">importArray</a>( <span>array <var>$response</var></span> )</code>
+		<code><a href="source-class-Arya.Response.html#572-588" title="Go to source code">importArray</a>( <span>array <var>$response</var></span> )</code>
 
 		<div class="description short">
-			
+			<p>Imports values from mapped array</p>
 
 		</div>
 
 		<div class="description detailed hidden">
-			
+			<p>Imports values from mapped array</p>
+
+<p>Calling importArray() will clear all previosly assigned values before assigning those from the
+mapped array.</p>
 
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$response</var></dt>
+					<dd>
+</dd>
+				</dl></div>
 
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Arya.Response.html">Arya\Response</a></code></code><br>Returns the current object instance
+
+				</div>
 
 
 
@@ -1313,26 +1332,30 @@ new Response instance.</p>
 		<td class="attributes"><code>
 			 public 
 
-			
+			array
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_toArray">#</a>
-		<code><a href="source-class-Arya.Response.html#581-591" title="Go to source code">toArray</a>( )</code>
+		<code><a href="source-class-Arya.Response.html#590-602" title="Go to source code">toArray</a>( )</code>
 
 		<div class="description short">
-			
+			<p>Returns the current object instance as a mapped array</p>
 
 		</div>
 
 		<div class="description detailed hidden">
-			
+			<p>Returns the current object instance as a mapped array</p>
 
 
 
 
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code>
+				</div>
 
 
 
@@ -1352,7 +1375,7 @@ new Response instance.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_clear">#</a>
-		<code><a href="source-class-Arya.Response.html#593-608" title="Go to source code">clear</a>( )</code>
+		<code><a href="source-class-Arya.Response.html#604-619" title="Go to source code">clear</a>( )</code>
 
 		<div class="description short">
 			<p>Remove all assigned values and reset defaults</p>
@@ -1389,18 +1412,27 @@ new Response instance.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_offsetSet">#</a>
-		<code><a href="source-class-Arya.Response.html#610-627" title="Go to source code">offsetSet</a>( <span>mixed <var>$offset</var></span>, <span>mixed <var>$value</var></span> )</code>
+		<code><a href="source-class-Arya.Response.html#621-645" title="Go to source code">offsetSet</a>( <span>offset <var>$offset</var></span>, <span>value <var>$value</var></span> )</code>
 
 		<div class="description short">
-			
+			<p>Sets a specific offset</p>
 
 		</div>
 
 		<div class="description detailed hidden">
-			
+			<p>Sets a specific offset</p>
 
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$offset</var></dt>
+					<dd>$string
+</dd>
+					<dt><var>$value</var></dt>
+					<dd>
+</dd>
+				</dl></div>
 
 
 
@@ -1416,26 +1448,36 @@ new Response instance.</p>
 		<td class="attributes"><code>
 			 public 
 
-			
+			boolean
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_offsetExists">#</a>
-		<code><a href="source-class-Arya.Response.html#629-642" title="Go to source code">offsetExists</a>( <span>mixed <var>$offset</var></span> )</code>
+		<code><a href="source-class-Arya.Response.html#647-666" title="Go to source code">offsetExists</a>( <span>string <var>$offset</var></span> )</code>
 
 		<div class="description short">
-			
+			<p>Check if a specific offset exists</p>
 
 		</div>
 
 		<div class="description detailed hidden">
-			
+			<p>Check if a specific offset exists</p>
 
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$offset</var></dt>
+					<dd>
+</dd>
+				</dl></div>
 
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code>
+				</div>
 
 
 
@@ -1457,18 +1499,26 @@ new Response instance.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_offsetUnset">#</a>
-		<code><a href="source-class-Arya.Response.html#644-661" title="Go to source code">offsetUnset</a>( <span>mixed <var>$offset</var></span> )</code>
+		<code><a href="source-class-Arya.Response.html#668-693" title="Go to source code">offsetUnset</a>( <span>string <var>$offset</var></span> )</code>
 
 		<div class="description short">
-			
+			<p>Unsets a specific offset to default value.</p>
 
 		</div>
 
 		<div class="description detailed hidden">
-			
+			<p>Unsets a specific offset to default value.</p>
+
+<p>Deletes the offset if it is a Non-Standard Response Key</p>
 
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$offset</var></dt>
+					<dd>
+</dd>
+				</dl></div>
 
 
 
@@ -1484,27 +1534,41 @@ new Response instance.</p>
 		<td class="attributes"><code>
 			 public 
 
-			
+			mixed
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_offsetGet">#</a>
-		<code><a href="source-class-Arya.Response.html#663-688" title="Go to source code">offsetGet</a>( <span>mixed <var>$offset</var></span> )</code>
+		<code><a href="source-class-Arya.Response.html#695-727" title="Go to source code">offsetGet</a>( <span>string <var>$offset</var></span> )</code>
 
 		<div class="description short">
-			
+			<p>Gets a specific offset</p>
 
 		</div>
 
 		<div class="description detailed hidden">
-			
+			<p>Gets a specific offset</p>
 
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$offset</var></dt>
+					<dd>
+</dd>
+				</dl></div>
 
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code>
+				</div>
 
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-DomainException.html">DomainException</a></code>
+				</div>
 
 
 
@@ -1540,6 +1604,6 @@ new Response instance.</p>
 </div>
 </div>
 <script src="resources/combined.js?721046668"></script>
-<script src="elementlist.js?499789592"></script>
+<script src="elementlist.js?1135216358"></script>
 </body>
 </html>

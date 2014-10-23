@@ -10,11 +10,28 @@
 </head>
 <body>
     <section>
-        <div id="editor">// [Insert code ]..</div>
+        <section id="editorWrap">
+            <div id="editorControl">
+                <dl id="editorSettings">
+                    <dt>
+                        Language:
+                    </dt>
+                    <dd>
+                        <select id="languageSelector">
+                            <option value="php">PHP</option>
+                            <option value="javascript">Javascript</option>
+                        </select>
+                    </dd>
+                </dl>
+                <!--<input id="language" />-->
+            </div>
+            <div id="editor">// [Insert code ]..
+            </div>
+        </section>
     </section>
     <script>
-    TogetherJSConfig_dontShowClicks = true;
     TogetherJSConfig_autostart =true;
+    TogetherJSConfig_dontShowClicks = true;
     TogetherJSConfig_suppressInvite = true;
     </script>
     <script src="https://togetherjs.com/togetherjs-min.js"></script>

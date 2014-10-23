@@ -123,7 +123,7 @@
 		<b>Namespace:</b> Arya\Sessions<br>
 		
 
-		<b>Located at</b> <a href="source-class-Arya.Sessions.Session.html#7-469" title="Go to source code">essions/Session.php</a><br>
+		<b>Located at</b> <a href="source-class-Arya.Sessions.Session.html#7-553" title="Go to source code">essions/Session.php</a><br>
 	</div>
 
 
@@ -142,7 +142,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Arya.Sessions.Session.html#40-43" title="Go to source code">__construct</a>( <span><code><a href="class-Arya.Request.html">Arya\Request</a></code> <var>$request</var></span>, <span><code><a href="class-Arya.Sessions.SessionHandler.html">Arya\Sessions\SessionHandler</a></code> <var>$handler</var> = <span class="php-keyword1">NULL</span></span> )</code>
+		<code><a href="source-class-Arya.Sessions.Session.html#40-47" title="Go to source code">__construct</a>( <span>Arya\Request <var>$request</var></span>, <span><code><a href="class-Arya.Sessions.SessionHandler.html">Arya\Sessions\SessionHandler</a></code> <var>$handler</var> = <span class="php-keyword1">NULL</span></span> )</code>
 
 		<div class="description short">
 			
@@ -154,6 +154,15 @@
 
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$request</var></dt>
+					<dd>
+</dd>
+					<dt><var>$handler</var></dt>
+					<dd>
+</dd>
+				</dl></div>
 
 
 
@@ -167,27 +176,43 @@
 		<td class="attributes"><code>
 			 public 
 
-			
+			mixed
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getOption">#</a>
-		<code><a href="source-class-Arya.Sessions.Session.html#45-54" title="Go to source code">getOption</a>( <span>mixed <var>$option</var></span> )</code>
+		<code><a href="source-class-Arya.Sessions.Session.html#49-67" title="Go to source code">getOption</a>( <span>string <var>$option</var></span> )</code>
 
 		<div class="description short">
-			
+			<p>Retrives a specific option</p>
 
 		</div>
 
 		<div class="description detailed hidden">
-			
+			<p>Retrives a specific option</p>
+
+<p>Option keys are NOT case-sensitive.</p>
 
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$option</var></dt>
+					<dd>
+</dd>
+				</dl></div>
 
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code>
+				</div>
 
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-DomainException.html">DomainException</a></code>
+				</div>
 
 
 
@@ -206,20 +231,32 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setAllOptions">#</a>
-		<code><a href="source-class-Arya.Sessions.Session.html#56-60" title="Go to source code">setAllOptions</a>( <span>array <var>$options</var></span> )</code>
+		<code><a href="source-class-Arya.Sessions.Session.html#69-82" title="Go to source code">setAllOptions</a>( <span>array <var>$options</var></span> )</code>
 
 		<div class="description short">
-			
+			<p>Set multiple options</p>
 
 		</div>
 
 		<div class="description detailed hidden">
-			
+			<p>Set multiple options</p>
+
+<p>Options keys are NOT case-sensitive.</p>
 
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$options</var></dt>
+					<dd>
+</dd>
+				</dl></div>
 
 
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-DomainException.html">DomainException</a></code>|<code><a href="class-InvalidArgumentException.html">InvalidArgumentException</a></code>
+				</div>
 
 
 
@@ -238,20 +275,33 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setOption">#</a>
-		<code><a href="source-class-Arya.Sessions.Session.html#62-108" title="Go to source code">setOption</a>( <span>mixed <var>$option</var></span>, <span>mixed <var>$value</var></span> )</code>
+		<code><a href="source-class-Arya.Sessions.Session.html#84-138" title="Go to source code">setOption</a>( <span>string <var>$option</var></span>, <span>mixed <var>$value</var></span> )</code>
 
 		<div class="description short">
-			
+			<p>Set specific option</p>
 
 		</div>
 
 		<div class="description detailed hidden">
-			
+			<p>Set specific option</p>
 
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$option</var></dt>
+					<dd>
+</dd>
+					<dt><var>$value</var></dt>
+					<dd>
+</dd>
+				</dl></div>
 
 
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-DomainException.html">DomainException</a></code>|<code><a href="class-InvalidArgumentException.html">InvalidArgumentException</a></code>
+				</div>
 
 
 
@@ -263,26 +313,38 @@
 		<td class="attributes"><code>
 			 public 
 
-			
+			boolean
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_has">#</a>
-		<code><a href="source-class-Arya.Sessions.Session.html#205-211" title="Go to source code">has</a>( <span>mixed <var>$field</var></span> )</code>
+		<code><a href="source-class-Arya.Sessions.Session.html#235-249" title="Go to source code">has</a>( <span>string <var>$field</var></span> )</code>
 
 		<div class="description short">
-			
+			<p>Checks if specific session field exists</p>
 
 		</div>
 
 		<div class="description detailed hidden">
-			
+			<p>Checks if specific session field exists</p>
+
+<p>Starts the session if not already open.</p>
 
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$field</var></dt>
+					<dd>
+</dd>
+				</dl></div>
 
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code>
+				</div>
 
 
 
@@ -295,27 +357,43 @@
 		<td class="attributes"><code>
 			 public 
 
-			
+			mixed
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_get">#</a>
-		<code><a href="source-class-Arya.Sessions.Session.html#292-304" title="Go to source code">get</a>( <span>mixed <var>$field</var></span> )</code>
+		<code><a href="source-class-Arya.Sessions.Session.html#330-351" title="Go to source code">get</a>( <span>string <var>$field</var></span> )</code>
 
 		<div class="description short">
-			
+			<p>Retrieve a specific session field</p>
 
 		</div>
 
 		<div class="description detailed hidden">
-			
+			<p>Retrieve a specific session field</p>
+
+<p>Starts the session if not already open.</p>
 
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$field</var></dt>
+					<dd>
+</dd>
+				</dl></div>
 
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code>
+				</div>
 
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-DomainException.html">DomainException</a></code>
+				</div>
 
 
 
@@ -327,27 +405,37 @@
 		<td class="attributes"><code>
 			 public 
 
-			
+			array
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getAll">#</a>
-		<code><a href="source-class-Arya.Sessions.Session.html#306-312" title="Go to source code">getAll</a>( )</code>
+		<code><a href="source-class-Arya.Sessions.Session.html#353-367" title="Go to source code">getAll</a>( )</code>
 
 		<div class="description short">
-			
+			<p>Retrieves all session data</p>
 
 		</div>
 
 		<div class="description detailed hidden">
-			
+			<p>Retrieves all session data</p>
+
+<p>Starts the session if not already open.</p>
 
 
 
 
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code>
+				</div>
 
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-Arya.Sessions.SessionException.html">Arya\Sessions\SessionException</a></code>
+				</div>
 
 
 
@@ -366,7 +454,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_set">#</a>
-		<code><a href="source-class-Arya.Sessions.Session.html#314-321" title="Go to source code">set</a>( <span>mixed <var>$field</var></span>, <span>mixed <var>$value</var></span> )</code>
+		<code><a href="source-class-Arya.Sessions.Session.html#369-376" title="Go to source code">set</a>( <span>mixed <var>$field</var></span>, <span>mixed <var>$value</var></span> )</code>
 
 		<div class="description short">
 			
@@ -398,7 +486,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_open">#</a>
-		<code><a href="source-class-Arya.Sessions.Session.html#323-340" title="Go to source code">open</a>( )</code>
+		<code><a href="source-class-Arya.Sessions.Session.html#378-395" title="Go to source code">open</a>( )</code>
 
 		<div class="description short">
 			
@@ -430,20 +518,24 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_save">#</a>
-		<code><a href="source-class-Arya.Sessions.Session.html#342-358" title="Go to source code">save</a>( )</code>
+		<code><a href="source-class-Arya.Sessions.Session.html#397-419" title="Go to source code">save</a>( )</code>
 
 		<div class="description short">
-			
+			<p>Persists the session data</p>
 
 		</div>
 
 		<div class="description detailed hidden">
-			
+			<p>Persists the session data</p>
 
 
 
 
 
+				<h4>Throws</h4>
+				<div class="list">
+					SessionExceptoin
+				</div>
 
 
 
@@ -462,20 +554,24 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_close">#</a>
-		<code><a href="source-class-Arya.Sessions.Session.html#360-378" title="Go to source code">close</a>( )</code>
+		<code><a href="source-class-Arya.Sessions.Session.html#421-445" title="Go to source code">close</a>( )</code>
 
 		<div class="description short">
-			
+			<p>Closes the session</p>
 
 		</div>
 
 		<div class="description detailed hidden">
-			
+			<p>Closes the session</p>
 
 
 
 
 
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-Arya.Sessions.SessionException.html">Arya\Sessions\SessionException</a></code>
+				</div>
 
 
 
@@ -494,15 +590,15 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_regenerate">#</a>
-		<code><a href="source-class-Arya.Sessions.Session.html#389-399" title="Go to source code">regenerate</a>( )</code>
+		<code><a href="source-class-Arya.Sessions.Session.html#456-471" title="Go to source code">regenerate</a>( )</code>
 
 		<div class="description short">
-			
+			<p>Destroys the current session and starts a new</p>
 
 		</div>
 
 		<div class="description detailed hidden">
-			
+			<p>Destroys the current session and starts a new</p>
 
 
 
@@ -519,26 +615,30 @@
 		<td class="attributes"><code>
 			 public 
 
-			
+			boolean
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_shouldSetCookie">#</a>
-		<code><a href="source-class-Arya.Sessions.Session.html#401-403" title="Go to source code">shouldSetCookie</a>( )</code>
+		<code><a href="source-class-Arya.Sessions.Session.html#473-480" title="Go to source code">shouldSetCookie</a>( )</code>
 
 		<div class="description short">
-			
+			<p>Checks if cookie has been altered and should be set</p>
 
 		</div>
 
 		<div class="description detailed hidden">
-			
+			<p>Checks if cookie has been altered and should be set</p>
 
 
 
 
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code>
+				</div>
 
 
 
@@ -551,26 +651,32 @@
 		<td class="attributes"><code>
 			 public 
 
-			
+			array
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getCookieElements">#</a>
-		<code><a href="source-class-Arya.Sessions.Session.html#405-417" title="Go to source code">getCookieElements</a>( )</code>
+		<code><a href="source-class-Arya.Sessions.Session.html#482-501" title="Go to source code">getCookieElements</a>( )</code>
 
 		<div class="description short">
-			
+			<p>Retrieves the cookie elements</p>
 
 		</div>
 
 		<div class="description detailed hidden">
-			
+			<p>Retrieves the cookie elements</p>
+
+<p>Cookie elements are cookie_name, sessionId, domain, path, expire, secure and httpOnly</p>
 
 
 
 
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code>
+				</div>
 
 
 
@@ -590,7 +696,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_offsetSet">#</a>
-		<code><a href="source-class-Arya.Sessions.Session.html#419-421" title="Go to source code">offsetSet</a>( <span>mixed <var>$offset</var></span>, <span>mixed <var>$value</var></span> )</code>
+		<code><a href="source-class-Arya.Sessions.Session.html#503-505" title="Go to source code">offsetSet</a>( <span>mixed <var>$offset</var></span>, <span>mixed <var>$value</var></span> )</code>
 
 		<div class="description short">
 			
@@ -624,7 +730,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_offsetExists">#</a>
-		<code><a href="source-class-Arya.Sessions.Session.html#423-425" title="Go to source code">offsetExists</a>( <span>mixed <var>$offset</var></span> )</code>
+		<code><a href="source-class-Arya.Sessions.Session.html#507-509" title="Go to source code">offsetExists</a>( <span>mixed <var>$offset</var></span> )</code>
 
 		<div class="description short">
 			
@@ -658,7 +764,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_offsetUnset">#</a>
-		<code><a href="source-class-Arya.Sessions.Session.html#427-437" title="Go to source code">offsetUnset</a>( <span>mixed <var>$offset</var></span> )</code>
+		<code><a href="source-class-Arya.Sessions.Session.html#511-521" title="Go to source code">offsetUnset</a>( <span>mixed <var>$offset</var></span> )</code>
 
 		<div class="description short">
 			
@@ -692,7 +798,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_offsetGet">#</a>
-		<code><a href="source-class-Arya.Sessions.Session.html#439-441" title="Go to source code">offsetGet</a>( <span>mixed <var>$offset</var></span> )</code>
+		<code><a href="source-class-Arya.Sessions.Session.html#523-525" title="Go to source code">offsetGet</a>( <span>mixed <var>$offset</var></span> )</code>
 
 		<div class="description short">
 			
@@ -726,7 +832,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_rewind">#</a>
-		<code><a href="source-class-Arya.Sessions.Session.html#443-445" title="Go to source code">rewind</a>( )</code>
+		<code><a href="source-class-Arya.Sessions.Session.html#527-529" title="Go to source code">rewind</a>( )</code>
 
 		<div class="description short">
 			
@@ -760,7 +866,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_current">#</a>
-		<code><a href="source-class-Arya.Sessions.Session.html#447-449" title="Go to source code">current</a>( )</code>
+		<code><a href="source-class-Arya.Sessions.Session.html#531-533" title="Go to source code">current</a>( )</code>
 
 		<div class="description short">
 			
@@ -794,7 +900,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_key">#</a>
-		<code><a href="source-class-Arya.Sessions.Session.html#451-453" title="Go to source code">key</a>( )</code>
+		<code><a href="source-class-Arya.Sessions.Session.html#535-537" title="Go to source code">key</a>( )</code>
 
 		<div class="description short">
 			
@@ -828,7 +934,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_next">#</a>
-		<code><a href="source-class-Arya.Sessions.Session.html#455-457" title="Go to source code">next</a>( )</code>
+		<code><a href="source-class-Arya.Sessions.Session.html#539-541" title="Go to source code">next</a>( )</code>
 
 		<div class="description short">
 			
@@ -862,7 +968,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_valid">#</a>
-		<code><a href="source-class-Arya.Sessions.Session.html#459-463" title="Go to source code">valid</a>( )</code>
+		<code><a href="source-class-Arya.Sessions.Session.html#543-547" title="Go to source code">valid</a>( )</code>
 
 		<div class="description short">
 			
@@ -896,7 +1002,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#___destruct">#</a>
-		<code><a href="source-class-Arya.Sessions.Session.html#465-468" title="Go to source code">__destruct</a>( )</code>
+		<code><a href="source-class-Arya.Sessions.Session.html#549-552" title="Go to source code">__destruct</a>( )</code>
 
 		<div class="description short">
 			
@@ -1050,6 +1156,6 @@
 </div>
 </div>
 <script src="resources/combined.js?721046668"></script>
-<script src="elementlist.js?499789592"></script>
+<script src="elementlist.js?1135216358"></script>
 </body>
 </html>
