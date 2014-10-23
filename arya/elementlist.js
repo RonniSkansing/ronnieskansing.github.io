@@ -1,0 +1,3 @@
+
+var ApiGen = ApiGen || {};
+ApiGen.elements = [["c","ArrayAccess"],["c","Arya\\Application"],["c","Arya\\Body"],["c","Arya\\ChunkedFileBody"],["c","Arya\\FileBody"],["c","Arya\\JsonBody"],["c","Arya\\Reason"],["c","Arya\\Request"],["c","Arya\\Response"],["c","Arya\\Sessions\\FileSessionHandler"],["c","Arya\\Sessions\\Session"],["c","Arya\\Sessions\\SessionException"],["c","Arya\\Sessions\\SessionHandler"],["c","Arya\\Sessions\\SessionMiddlewareProxy"],["c","Arya\\Status"],["c","Arya\\UserInputException"],["c","DomainException"],["c","Exception"],["c","InvalidArgumentException"],["c","Iterator"],["c","LogicException"],["c","RuntimeException"],["c","Traversable"],["c","UnexpectedValueException"]];

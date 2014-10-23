@@ -1,0 +1,1489 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class Arya\Request | Arya</title>
+
+	<link rel="stylesheet" href="resources/style.css?1648332946">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-Arya.html">Arya<span></span></a>
+						<ul>
+				<li><a href="namespace-Arya.Sessions.html">Sessions</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Arya.Application.html">Application</a></li>
+				<li><a href="class-Arya.ChunkedFileBody.html">ChunkedFileBody</a></li>
+				<li><a href="class-Arya.FileBody.html">FileBody</a></li>
+				<li><a href="class-Arya.JsonBody.html">JsonBody</a></li>
+				<li class="active"><a href="class-Arya.Request.html">Request</a></li>
+				<li><a href="class-Arya.Response.html">Response</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-Arya.Body.html">Body</a></li>
+				<li><a href="class-Arya.Reason.html">Reason</a></li>
+				<li><a href="class-Arya.Status.html">Status</a></li>
+			</ul>
+
+
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="class-Arya.UserInputException.html">UserInputException</a></li>
+			</ul>
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Arya.html" title="Summary of Arya"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Request</h1>
+
+
+	<div class="description">
+	
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+<b><span>Arya\Request</span></b>			
+			 implements 
+				<a href="class-ArrayAccess.html"><span>ArrayAccess</span></a>, 
+			
+				<a href="class-Iterator.html"><span>Iterator</span></a>
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> Arya<br>
+		
+
+		<b>Located at</b> <a href="source-class-Arya.Request.html#5-414" title="Go to source code">equest.php</a><br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Arya.Request.html#20-29" title="Go to source code">__construct</a>( <span>array <var>$_server</var></span>, <span>array <var>$_get</var></span>, <span>array <var>$_post</var></span>, <span>array <var>$_files</var></span>, <span>array <var>$_cookie</var></span>, <span>mixed <var>$_input</var></span> )</code>
+
+		<div class="description short">
+			
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="hasHeader" id="_hasHeader">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_hasHeader">#</a>
+		<code><a href="source-class-Arya.Request.html#76-86" title="Go to source code">hasHeader</a>( <span>string <var>$field</var></span> )</code>
+
+		<div class="description short">
+			<p>Did the request contain the specified header field?</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Did the request contain the specified header field?</p>
+
+<p>Header field names are NOT case-sensitive.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$field</var></dt>
+					<dd>
+</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getHeader" id="_getHeader">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getHeader">#</a>
+		<code><a href="source-class-Arya.Request.html#88-97" title="Go to source code">getHeader</a>( <span>mixed <var>$field</var></span> )</code>
+
+		<div class="description short">
+			
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getAllHeaders" id="_getAllHeaders">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getAllHeaders">#</a>
+		<code><a href="source-class-Arya.Request.html#99-101" title="Go to source code">getAllHeaders</a>( )</code>
+
+		<div class="description short">
+			
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="hasQueryParameter" id="_hasQueryParameter">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_hasQueryParameter">#</a>
+		<code><a href="source-class-Arya.Request.html#103-115" title="Go to source code">hasQueryParameter</a>( <span>mixed <var>$field</var></span> )</code>
+
+		<div class="description short">
+			
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getQueryParameter" id="_getQueryParameter">
+
+		<td class="attributes"><code>
+			 public 
+
+			array|string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getQueryParameter">#</a>
+		<code><a href="source-class-Arya.Request.html#117-135" title="Go to source code">getQueryParameter</a>( <span>string <var>$field</var></span> )</code>
+
+		<div class="description short">
+			<p>Retrieve the value of a query parameter</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Retrieve the value of a query parameter</p>
+
+<p>If the specified query parameter does not exist a \DomainException is thrown. If uncaught
+this exception results in a 500 Internal Server Error being relayed to the user.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$field</var></dt>
+					<dd>
+</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array|string</code>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-DomainException.html">DomainException</a></code><br>If query field does not exist in the request
+
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getArrayQueryParameter" id="_getArrayQueryParameter">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getArrayQueryParameter">#</a>
+		<code><a href="source-class-Arya.Request.html#137-158" title="Go to source code">getArrayQueryParameter</a>( <span>string <var>$field</var></span> )</code>
+
+		<div class="description short">
+			<p>A convenience method for retrieving a query parameter with the expectation that the value is an array</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			<p>A convenience method for retrieving a query parameter with the expectation that the value is an array</p>
+
+<p>An uncaught UserInputException will result in a 400 Invalid Query Parameter response being
+returned to the user.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$field</var></dt>
+					<dd>
+</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-Arya.UserInputException.html">Arya\UserInputException</a></code><br>
+					<code><a href="class-DomainException.html">DomainException</a></code><br>If query field does not exist in the request
+
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getStringQueryParameter" id="_getStringQueryParameter">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getStringQueryParameter">#</a>
+		<code><a href="source-class-Arya.Request.html#160-181" title="Go to source code">getStringQueryParameter</a>( <span>string <var>$field</var></span> )</code>
+
+		<div class="description short">
+			<p>A convenience method for retrieving a query parameter with the expectation that the value is a string</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			<p>A convenience method for retrieving a query parameter with the expectation that the value is a string</p>
+
+<p>An uncaught UserInputException will result in a 400 Invalid Query Parameter response being
+returned to the user.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$field</var></dt>
+					<dd>
+</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-Arya.UserInputException.html">Arya\UserInputException</a></code><br>
+					<code><a href="class-DomainException.html">DomainException</a></code><br>If query field does not exist in the request
+
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getAllQueryParameters" id="_getAllQueryParameters">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getAllQueryParameters">#</a>
+		<code><a href="source-class-Arya.Request.html#183-185" title="Go to source code">getAllQueryParameters</a>( )</code>
+
+		<div class="description short">
+			
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="hasFormField" id="_hasFormField">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_hasFormField">#</a>
+		<code><a href="source-class-Arya.Request.html#187-189" title="Go to source code">hasFormField</a>( <span>mixed <var>$field</var></span> )</code>
+
+		<div class="description short">
+			
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getFormField" id="_getFormField">
+
+		<td class="attributes"><code>
+			 public 
+
+			string|array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getFormField">#</a>
+		<code><a href="source-class-Arya.Request.html#191-209" title="Go to source code">getFormField</a>( <span>string <var>$field</var></span> )</code>
+
+		<div class="description short">
+			<p>Retrieve the value of a submitted form field</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Retrieve the value of a submitted form field</p>
+
+<p>If the specified form field does not exist a \DomainException is thrown. If uncaught
+this exception results in a 500 Internal Server Error being relayed to the user.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$field</var></dt>
+					<dd>
+</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string|array</code>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-DomainException.html">DomainException</a></code><br>If form field does not exist in the request
+
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getArrayFormField" id="_getArrayFormField">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getArrayFormField">#</a>
+		<code><a href="source-class-Arya.Request.html#211-232" title="Go to source code">getArrayFormField</a>( <span>string <var>$field</var></span> )</code>
+
+		<div class="description short">
+			<p>A convenience method for retrieving a form field with the expectation that the value is an array</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			<p>A convenience method for retrieving a form field with the expectation that the value is an array</p>
+
+<p>An uncaught UserInputException will result in a 400 Invalid Query Parameter response being
+returned to the user.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$field</var></dt>
+					<dd>
+</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-Arya.UserInputException.html">Arya\UserInputException</a></code><br>
+					<code><a href="class-DomainException.html">DomainException</a></code><br>If form field does not exist in the request
+
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getStringFormField" id="_getStringFormField">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getStringFormField">#</a>
+		<code><a href="source-class-Arya.Request.html#234-255" title="Go to source code">getStringFormField</a>( <span>string <var>$field</var></span> )</code>
+
+		<div class="description short">
+			<p>A convenience method for retrieving a form field with the expectation that the value is a string</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			<p>A convenience method for retrieving a form field with the expectation that the value is a string</p>
+
+<p>An uncaught UserInputException will result in a 400 Invalid Query Parameter response being
+returned to the user.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$field</var></dt>
+					<dd>
+</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-Arya.UserInputException.html">Arya\UserInputException</a></code><br>
+					<code><a href="class-DomainException.html">DomainException</a></code><br>If form field does not exist in the request
+
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getAllFormFields" id="_getAllFormFields">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getAllFormFields">#</a>
+		<code><a href="source-class-Arya.Request.html#257-259" title="Go to source code">getAllFormFields</a>( )</code>
+
+		<div class="description short">
+			
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="hasFormFile" id="_hasFormFile">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_hasFormFile">#</a>
+		<code><a href="source-class-Arya.Request.html#261-263" title="Go to source code">hasFormFile</a>( <span>mixed <var>$field</var></span> )</code>
+
+		<div class="description short">
+			
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getFormFile" id="_getFormFile">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getFormFile">#</a>
+		<code><a href="source-class-Arya.Request.html#265-273" title="Go to source code">getFormFile</a>( <span>mixed <var>$field</var></span> )</code>
+
+		<div class="description short">
+			
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getAllFormFiles" id="_getAllFormFiles">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getAllFormFiles">#</a>
+		<code><a href="source-class-Arya.Request.html#275-277" title="Go to source code">getAllFormFiles</a>( )</code>
+
+		<div class="description short">
+			
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="hasCookie" id="_hasCookie">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_hasCookie">#</a>
+		<code><a href="source-class-Arya.Request.html#279-281" title="Go to source code">hasCookie</a>( <span>mixed <var>$field</var></span> )</code>
+
+		<div class="description short">
+			
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getCookie" id="_getCookie">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getCookie">#</a>
+		<code><a href="source-class-Arya.Request.html#283-291" title="Go to source code">getCookie</a>( <span>mixed <var>$field</var></span> )</code>
+
+		<div class="description short">
+			
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getAllCookies" id="_getAllCookies">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getAllCookies">#</a>
+		<code><a href="source-class-Arya.Request.html#293-295" title="Go to source code">getAllCookies</a>( )</code>
+
+		<div class="description short">
+			
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="hasBody" id="_hasBody">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_hasBody">#</a>
+		<code><a href="source-class-Arya.Request.html#297-299" title="Go to source code">hasBody</a>( )</code>
+
+		<div class="description short">
+			
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getBody" id="_getBody">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getBody">#</a>
+		<code><a href="source-class-Arya.Request.html#301-311" title="Go to source code">getBody</a>( )</code>
+
+		<div class="description short">
+			
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getBodyStream" id="_getBodyStream">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getBodyStream">#</a>
+		<code><a href="source-class-Arya.Request.html#340-342" title="Go to source code">getBodyStream</a>( )</code>
+
+		<div class="description short">
+			
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="set" id="_set">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_set">#</a>
+		<code><a href="source-class-Arya.Request.html#344-346" title="Go to source code">set</a>( <span>mixed <var>$offset</var></span>, <span>mixed <var>$value</var></span> )</code>
+
+		<div class="description short">
+			
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="has" id="_has">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_has">#</a>
+		<code><a href="source-class-Arya.Request.html#348-350" title="Go to source code">has</a>( <span>mixed <var>$field</var></span> )</code>
+
+		<div class="description short">
+			
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get" id="_get">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get">#</a>
+		<code><a href="source-class-Arya.Request.html#352-360" title="Go to source code">get</a>( <span>mixed <var>$field</var></span> )</code>
+
+		<div class="description short">
+			
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="all" id="_all">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_all">#</a>
+		<code><a href="source-class-Arya.Request.html#362-364" title="Go to source code">all</a>( )</code>
+
+		<div class="description short">
+			
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isEncrypted" id="_isEncrypted">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isEncrypted">#</a>
+		<code><a href="source-class-Arya.Request.html#366-368" title="Go to source code">isEncrypted</a>( )</code>
+
+		<div class="description short">
+			
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="offsetSet" id="_offsetSet">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_offsetSet">#</a>
+		<code><a href="source-class-Arya.Request.html#370-372" title="Go to source code">offsetSet</a>( <span>mixed <var>$offset</var></span>, <span>mixed <var>$value</var></span> )</code>
+
+		<div class="description short">
+			
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-ArrayAccess.html#_offsetSet">ArrayAccess::offsetSet()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="offsetExists" id="_offsetExists">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_offsetExists">#</a>
+		<code><a href="source-class-Arya.Request.html#374-376" title="Go to source code">offsetExists</a>( <span>mixed <var>$offset</var></span> )</code>
+
+		<div class="description short">
+			
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-ArrayAccess.html#_offsetExists">ArrayAccess::offsetExists()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="offsetUnset" id="_offsetUnset">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_offsetUnset">#</a>
+		<code><a href="source-class-Arya.Request.html#378-380" title="Go to source code">offsetUnset</a>( <span>mixed <var>$offset</var></span> )</code>
+
+		<div class="description short">
+			
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-ArrayAccess.html#_offsetUnset">ArrayAccess::offsetUnset()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="offsetGet" id="_offsetGet">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_offsetGet">#</a>
+		<code><a href="source-class-Arya.Request.html#382-390" title="Go to source code">offsetGet</a>( <span>mixed <var>$offset</var></span> )</code>
+
+		<div class="description short">
+			
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-ArrayAccess.html#_offsetGet">ArrayAccess::offsetGet()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="rewind" id="_rewind">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_rewind">#</a>
+		<code><a href="source-class-Arya.Request.html#392-394" title="Go to source code">rewind</a>( )</code>
+
+		<div class="description short">
+			
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Iterator.html#_rewind">Iterator::rewind()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="current" id="_current">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_current">#</a>
+		<code><a href="source-class-Arya.Request.html#396-398" title="Go to source code">current</a>( )</code>
+
+		<div class="description short">
+			
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Iterator.html#_current">Iterator::current()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="key" id="_key">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_key">#</a>
+		<code><a href="source-class-Arya.Request.html#400-402" title="Go to source code">key</a>( )</code>
+
+		<div class="description short">
+			
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Iterator.html#_key">Iterator::key()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="next" id="_next">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_next">#</a>
+		<code><a href="source-class-Arya.Request.html#404-406" title="Go to source code">next</a>( )</code>
+
+		<div class="description short">
+			
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Iterator.html#_next">Iterator::next()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="valid" id="_valid">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_valid">#</a>
+		<code><a href="source-class-Arya.Request.html#408-412" title="Go to source code">valid</a>( )</code>
+
+		<div class="description short">
+			
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Iterator.html#_valid">Iterator::valid()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		Arya API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js?721046668"></script>
+<script src="elementlist.js?499789592"></script>
+</body>
+</html>

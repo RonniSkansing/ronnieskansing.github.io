@@ -1,0 +1,1545 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class Arya\Response | Arya</title>
+
+	<link rel="stylesheet" href="resources/style.css?1648332946">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-Arya.html">Arya<span></span></a>
+						<ul>
+				<li><a href="namespace-Arya.Sessions.html">Sessions</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Arya.Application.html">Application</a></li>
+				<li><a href="class-Arya.ChunkedFileBody.html">ChunkedFileBody</a></li>
+				<li><a href="class-Arya.FileBody.html">FileBody</a></li>
+				<li><a href="class-Arya.JsonBody.html">JsonBody</a></li>
+				<li><a href="class-Arya.Request.html">Request</a></li>
+				<li class="active"><a href="class-Arya.Response.html">Response</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-Arya.Body.html">Body</a></li>
+				<li><a href="class-Arya.Reason.html">Reason</a></li>
+				<li><a href="class-Arya.Status.html">Status</a></li>
+			</ul>
+
+
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="class-Arya.UserInputException.html">UserInputException</a></li>
+			</ul>
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Arya.html" title="Summary of Arya"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Response</h1>
+
+
+	<div class="description">
+	
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+<b><span>Arya\Response</span></b>			
+			 implements 
+				<a href="class-ArrayAccess.html"><span>ArrayAccess</span></a>
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> Arya<br>
+		
+
+		<b>Located at</b> <a href="source-class-Arya.Response.html#5-690" title="Go to source code">esponse.php</a><br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Arya.Response.html#22-26" title="Go to source code">__construct</a>( <span>array <var>$map</var> = []</span> )</code>
+
+		<div class="description short">
+			
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setStatus" id="_setStatus">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Arya.Response.html">Arya\Response</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setStatus">#</a>
+		<code><a href="source-class-Arya.Response.html#28-47" title="Go to source code">setStatus</a>( <span>integer <var>$statusCode</var></span> )</code>
+
+		<div class="description short">
+			<p>Assign the response status code (default: 200)</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Assign the response status code (default: 200)</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$statusCode</var></dt>
+					<dd>
+</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Arya.Response.html">Arya\Response</a></code></code><br>Returns the current object instance
+
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-InvalidArgumentException.html">InvalidArgumentException</a></code>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setReasonPhrase" id="_setReasonPhrase">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Arya.Response.html">Arya\Response</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setReasonPhrase">#</a>
+		<code><a href="source-class-Arya.Response.html#49-66" title="Go to source code">setReasonPhrase</a>( <span>string <var>$reasonPhrase</var></span> )</code>
+
+		<div class="description short">
+			<p>Assign an optional reason phrase (e.g. Not Found) to accompany the status code</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Assign an optional reason phrase (e.g. Not Found) to accompany the status code</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$reasonPhrase</var></dt>
+					<dd>
+</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Arya.Response.html">Arya\Response</a></code></code><br>Returns the current object instance
+
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-InvalidArgumentException.html">InvalidArgumentException</a></code>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setAllHeaders" id="_setAllHeaders">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Arya.Response.html">Arya\Response</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setAllHeaders">#</a>
+		<code><a href="source-class-Arya.Response.html#68-84" title="Go to source code">setAllHeaders</a>( <span>array <var>$headerArray</var></span> )</code>
+
+		<div class="description short">
+			<p>Set multiple headers from a key-value array</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set multiple headers from a key-value array</p>
+
+<p>Existing values matching the specified field are replaced.
+Header field names are NOT case-sensitive.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$headerArray</var></dt>
+					<dd>
+</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Arya.Response.html">Arya\Response</a></code></code><br>Returns the current object instance
+
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-InvalidArgumentException.html">InvalidArgumentException</a></code>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setHeader" id="_setHeader">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Arya.Response.html">Arya\Response</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setHeader">#</a>
+		<code><a href="source-class-Arya.Response.html#86-128" title="Go to source code">setHeader</a>( <span>string <var>$field</var></span>, <span>string <var>$value</var></span> )</code>
+
+		<div class="description short">
+			<p>Assign a header value</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Assign a header value</p>
+
+<p>Existing values matching the specified field are replaced.
+Header field names are NOT case-sensitive.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$field</var></dt>
+					<dd>
+</dd>
+					<dt><var>$value</var></dt>
+					<dd>
+</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Arya.Response.html">Arya\Response</a></code></code><br>Returns the current object instance
+
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-InvalidArgumentException.html">InvalidArgumentException</a></code>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setAllHeaderLines" id="_setAllHeaderLines">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Arya.Response.html">Arya\Response</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setAllHeaderLines">#</a>
+		<code><a href="source-class-Arya.Response.html#186-199" title="Go to source code">setAllHeaderLines</a>( <span>array <var>$lines</var></span> )</code>
+
+		<div class="description short">
+			<p>Assign multiple raw header lines at once</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Assign multiple raw header lines at once</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$lines</var></dt>
+					<dd>array of header lines of the form "My-Header: some value"
+</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Arya.Response.html">Arya\Response</a></code></code><br>Returns the current object instance
+
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-InvalidArgumentException.html">InvalidArgumentException</a></code>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setHeaderLine" id="_setHeaderLine">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Arya.Response.html">Arya\Response</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setHeaderLine">#</a>
+		<code><a href="source-class-Arya.Response.html#201-216" title="Go to source code">setHeaderLine</a>( <span>string <var>$line</var></span> )</code>
+
+		<div class="description short">
+			<p>Assign a raw header line of the form "Some-Header-Field: my value"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Assign a raw header line of the form "Some-Header-Field: my value"</p>
+
+<p>Existing values matching the header line's field are replaced by the new value.
+Header field names are NOT case-sensitive.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$line</var></dt>
+					<dd>
+</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Arya.Response.html">Arya\Response</a></code></code><br>Returns the current object instance
+
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-InvalidArgumentException.html">InvalidArgumentException</a></code>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addAllHeaderLines" id="_addAllHeaderLines">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Arya.Response.html">Arya\Response</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addAllHeaderLines">#</a>
+		<code><a href="source-class-Arya.Response.html#218-231" title="Go to source code">addAllHeaderLines</a>( <span>array <var>$lines</var></span> )</code>
+
+		<div class="description short">
+			<p>Append multiple raw header lines of the form "Some-Header-Field: my value"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Append multiple raw header lines of the form "Some-Header-Field: my value"</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$lines</var></dt>
+					<dd>
+</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Arya.Response.html">Arya\Response</a></code></code><br>Returns the current object instance
+
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-InvalidArgumentException.html">InvalidArgumentException</a></code>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addHeaderLine" id="_addHeaderLine">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Arya.Response.html">Arya\Response</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addHeaderLine">#</a>
+		<code><a href="source-class-Arya.Response.html#233-248" title="Go to source code">addHeaderLine</a>( <span>string <var>$line</var></span> )</code>
+
+		<div class="description short">
+			<p>Appends a raw header line of the form "Some-Header-Field: my value"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Appends a raw header line of the form "Some-Header-Field: my value"</p>
+
+<p>The header's value is appended to existing headers with the same field name.
+Header field names are NOT case-sensitive.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$line</var></dt>
+					<dd>
+</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Arya.Response.html">Arya\Response</a></code></code><br>Returns the current object instance
+
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-InvalidArgumentException.html">InvalidArgumentException</a></code>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addHeader" id="_addHeader">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Arya.Response.html">Arya\Response</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addHeader">#</a>
+		<code><a href="source-class-Arya.Response.html#270-293" title="Go to source code">addHeader</a>( <span>string <var>$field</var></span>, <span>string <var>$value</var></span> )</code>
+
+		<div class="description short">
+			<p>Append a header value</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Append a header value</p>
+
+<p>The header value is appended to existing fields with the same name.
+Header field names are NOT case-sensitive.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$field</var></dt>
+					<dd>
+</dd>
+					<dt><var>$value</var></dt>
+					<dd>
+</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Arya.Response.html">Arya\Response</a></code></code><br>Returns the current object instance
+
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-InvalidArgumentException.html">InvalidArgumentException</a></code>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="hasHeader" id="_hasHeader">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_hasHeader">#</a>
+		<code><a href="source-class-Arya.Response.html#295-307" title="Go to source code">hasHeader</a>( <span>string <var>$field</var></span> )</code>
+
+		<div class="description short">
+			<p>Does the response currently have a value for the specified header field?</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Does the response currently have a value for the specified header field?</p>
+
+<p>Header field names are NOT case-sensitive.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$field</var></dt>
+					<dd>
+</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="removeHeader" id="_removeHeader">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Arya.Response.html">Arya\Response</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_removeHeader">#</a>
+		<code><a href="source-class-Arya.Response.html#309-331" title="Go to source code">removeHeader</a>( <span>string <var>$field</var></span> )</code>
+
+		<div class="description short">
+			<p>Removes assigned headers for the specified field</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Removes assigned headers for the specified field</p>
+
+<p>Header field names are NOT case-sensitive.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$field</var></dt>
+					<dd>
+</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Arya.Response.html">Arya\Response</a></code></code><br>Returns the current object instance
+
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="removeAllHeaders" id="_removeAllHeaders">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Arya.Response.html">Arya\Response</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_removeAllHeaders">#</a>
+		<code><a href="source-class-Arya.Response.html#333-344" title="Go to source code">removeAllHeaders</a>( )</code>
+
+		<div class="description short">
+			<p>Removes all assigned headers</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Removes all assigned headers</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Arya.Response.html">Arya\Response</a></code></code><br>Returns the current object instance
+
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setCookie" id="_setCookie">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Arya.Response.html">Arya\Response</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setCookie">#</a>
+		<code><a href="source-class-Arya.Response.html#346-370" title="Go to source code">setCookie</a>( <span>string <var>$name</var></span>, <span>string <var>$value</var> = <span class="php-quote">''</span></span>, <span>array <var>$options</var> = []</span> )</code>
+
+		<div class="description short">
+			<p>Set a cookie value to be sent with the response.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set a cookie value to be sent with the response.</p>
+
+<p>Cookie values will be available upon the client's next request. Extended cookie options
+beyond the name-value pair may be specified using individual keys in the $options array:
+ [ 'expire' => 0,       // Expiration time (unix timestamp) for this cookie 'path' => '',        // The server path on which the cookie will be available 'domain' => '',      // The domain on which the cookie will be available 'secure' => FALSE,   // Indicates the cookie should only be sent via HTTPS 'httponly' => FALSE  // When TRUE the cookie is only available via the HTTP protocol ];</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd>
+</dd>
+					<dt><var>$value</var></dt>
+					<dd>
+</dd>
+					<dt><var>$options</var></dt>
+					<dd>
+</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Arya.Response.html">Arya\Response</a></code></code><br>Returns the current object instance
+
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setRawCookie" id="_setRawCookie">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Arya.Response.html">Arya\Response</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setRawCookie">#</a>
+		<code><a href="source-class-Arya.Response.html#372-384" title="Go to source code">setRawCookie</a>( <span>string <var>$name</var></span>, <span>string <var>$value</var> = <span class="php-quote">''</span></span>, <span>array <var>$options</var> = []</span> )</code>
+
+		<div class="description short">
+			<p>Same as Response::setCookie except that the cookie value will not be automatically urlencoded</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Same as Response::setCookie except that the cookie value will not be automatically urlencoded</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd>
+</dd>
+					<dt><var>$value</var></dt>
+					<dd>
+</dd>
+					<dt><var>$options</var></dt>
+					<dd>
+</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Arya.Response.html">Arya\Response</a></code></code><br>Returns the current object instance
+
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="hasCookie" id="_hasCookie">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_hasCookie">#</a>
+		<code><a href="source-class-Arya.Response.html#412-420" title="Go to source code">hasCookie</a>( <span>string <var>$name</var></span> )</code>
+
+		<div class="description short">
+			<p>Has a cookie with this name been assigned to the response?</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Has a cookie with this name been assigned to the response?</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd>
+</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="removeCookie" id="_removeCookie">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Arya.Response.html">Arya\Response</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_removeCookie">#</a>
+		<code><a href="source-class-Arya.Response.html#422-432" title="Go to source code">removeCookie</a>( <span>string <var>$name</var></span> )</code>
+
+		<div class="description short">
+			<p>Remove an assigned cookie matching the specified name</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Remove an assigned cookie matching the specified name</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd>
+</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Arya.Response.html">Arya\Response</a></code></code><br>Returns the current object instance
+
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getStatus" id="_getStatus">
+
+		<td class="attributes"><code>
+			 public 
+
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getStatus">#</a>
+		<code><a href="source-class-Arya.Response.html#434-441" title="Go to source code">getStatus</a>( )</code>
+
+		<div class="description short">
+			<p>Get the status code for this response</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get the status code for this response</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getReasonPhrase" id="_getReasonPhrase">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getReasonPhrase">#</a>
+		<code><a href="source-class-Arya.Response.html#443-450" title="Go to source code">getReasonPhrase</a>( )</code>
+
+		<div class="description short">
+			<p>Get the assigned reason phrase for this response</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get the assigned reason phrase for this response</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getHeader" id="_getHeader">
+
+		<td class="attributes"><code>
+			 public 
+
+			string|array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getHeader">#</a>
+		<code><a href="source-class-Arya.Response.html#452-477" title="Go to source code">getHeader</a>( <span>string <var>$field</var></span> )</code>
+
+		<div class="description short">
+			<p>Retrieve assigned header values for the specified field</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Retrieve assigned header values for the specified field</p>
+
+<p>If only one value is assigned for the specified field, that scalar value is returned. If
+multiple values are assigned for the field an array of scalars is returned.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$field</var></dt>
+					<dd>
+</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string|array</code>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-DomainException.html">DomainException</a></code>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setBody" id="_setBody">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Arya.Response.html">Arya\Response</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setBody">#</a>
+		<code><a href="source-class-Arya.Response.html#479-501" title="Go to source code">setBody</a>( <span>null|string|callable|<code><a href="class-Arya.Body.html">Arya\Body</a></code> <var>$body</var></span> )</code>
+
+		<div class="description short">
+			<p>Assign a response entity body</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Assign a response entity body</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$body</var></dt>
+					<dd>
+</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Arya.Response.html">Arya\Response</a></code></code><br>Returns the current object instance
+
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-InvalidArgumentException.html">InvalidArgumentException</a></code>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getAllHeaders" id="_getAllHeaders">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getAllHeaders">#</a>
+		<code><a href="source-class-Arya.Response.html#503-515" title="Go to source code">getAllHeaders</a>( )</code>
+
+		<div class="description short">
+			<p>Retrieve an array mapping header field names to their assigned values</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Retrieve an array mapping header field names to their assigned values</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getAllHeaderLines" id="_getAllHeaderLines">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getAllHeaderLines">#</a>
+		<code><a href="source-class-Arya.Response.html#517-531" title="Go to source code">getAllHeaderLines</a>( )</code>
+
+		<div class="description short">
+			<p>Retrieve an array of header strings appropriate for output</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Retrieve an array of header strings appropriate for output</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getBody" id="_getBody">
+
+		<td class="attributes"><code>
+			 public 
+
+			|string|callable
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getBody">#</a>
+		<code><a href="source-class-Arya.Response.html#533-540" title="Go to source code">getBody</a>( )</code>
+
+		<div class="description short">
+			<p>Retrieve the entity body assigned for this response</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Retrieve the entity body assigned for this response</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>|string|callable</code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="hasBody" id="_hasBody">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_hasBody">#</a>
+		<code><a href="source-class-Arya.Response.html#542-549" title="Go to source code">hasBody</a>( )</code>
+
+		<div class="description short">
+			<p>Is an entity body assigned for this response?</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Is an entity body assigned for this response?</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="import" id="_import">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Arya.Response.html">Arya\Response</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_import">#</a>
+		<code><a href="source-class-Arya.Response.html#551-567" title="Go to source code">import</a>( <span><code><a href="class-Arya.Response.html">Arya\Response</a></code> <var>$response</var></span> )</code>
+
+		<div class="description short">
+			<p>Import values from external Response instance</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Import values from external Response instance</p>
+
+<p>Calling import() will clear all previously assigned values before assigning those from the
+new Response instance.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$response</var></dt>
+					<dd>
+</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Arya.Response.html">Arya\Response</a></code></code><br>Returns the current object instance
+
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="importArray" id="_importArray">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_importArray">#</a>
+		<code><a href="source-class-Arya.Response.html#569-579" title="Go to source code">importArray</a>( <span>array <var>$response</var></span> )</code>
+
+		<div class="description short">
+			
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="toArray" id="_toArray">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_toArray">#</a>
+		<code><a href="source-class-Arya.Response.html#581-591" title="Go to source code">toArray</a>( )</code>
+
+		<div class="description short">
+			
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="clear" id="_clear">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Arya.Response.html">Arya\Response</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_clear">#</a>
+		<code><a href="source-class-Arya.Response.html#593-608" title="Go to source code">clear</a>( )</code>
+
+		<div class="description short">
+			<p>Remove all assigned values and reset defaults</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Remove all assigned values and reset defaults</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Arya.Response.html">Arya\Response</a></code></code><br>Returns the current object instance
+
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="offsetSet" id="_offsetSet">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_offsetSet">#</a>
+		<code><a href="source-class-Arya.Response.html#610-627" title="Go to source code">offsetSet</a>( <span>mixed <var>$offset</var></span>, <span>mixed <var>$value</var></span> )</code>
+
+		<div class="description short">
+			
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-ArrayAccess.html#_offsetSet">ArrayAccess::offsetSet()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="offsetExists" id="_offsetExists">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_offsetExists">#</a>
+		<code><a href="source-class-Arya.Response.html#629-642" title="Go to source code">offsetExists</a>( <span>mixed <var>$offset</var></span> )</code>
+
+		<div class="description short">
+			
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-ArrayAccess.html#_offsetExists">ArrayAccess::offsetExists()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="offsetUnset" id="_offsetUnset">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_offsetUnset">#</a>
+		<code><a href="source-class-Arya.Response.html#644-661" title="Go to source code">offsetUnset</a>( <span>mixed <var>$offset</var></span> )</code>
+
+		<div class="description short">
+			
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-ArrayAccess.html#_offsetUnset">ArrayAccess::offsetUnset()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="offsetGet" id="_offsetGet">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_offsetGet">#</a>
+		<code><a href="source-class-Arya.Response.html#663-688" title="Go to source code">offsetGet</a>( <span>mixed <var>$offset</var></span> )</code>
+
+		<div class="description short">
+			
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-ArrayAccess.html#_offsetGet">ArrayAccess::offsetGet()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		Arya API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js?721046668"></script>
+<script src="elementlist.js?499789592"></script>
+</body>
+</html>

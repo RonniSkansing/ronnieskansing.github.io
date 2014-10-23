@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Interface Arya\Sessions\SessionHandler | Arya</title>
+
+	<link rel="stylesheet" href="resources/style.css?1648332946">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-Arya.html">Arya<span></span></a>
+						<ul>
+				<li class="active"><a href="namespace-Arya.Sessions.html">Sessions</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Arya.Sessions.FileSessionHandler.html">FileSessionHandler</a></li>
+				<li><a href="class-Arya.Sessions.Session.html">Session</a></li>
+				<li><a href="class-Arya.Sessions.SessionMiddlewareProxy.html">SessionMiddlewareProxy</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li class="active"><a href="class-Arya.Sessions.SessionHandler.html">SessionHandler</a></li>
+			</ul>
+
+
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="class-Arya.Sessions.SessionException.html">SessionException</a></li>
+			</ul>
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Arya.Sessions.html" title="Summary of Arya\Sessions"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Interface SessionHandler</h1>
+
+
+	<div class="description">
+	
+
+	</div>
+
+
+
+
+
+	<div>
+		<h4>Direct known implementers</h4>
+			<a href="class-Arya.Sessions.FileSessionHandler.html">Arya\Sessions\FileSessionHandler</a>
+	</div>
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> Arya\Sessions<br>
+		
+
+		<b>Located at</b> <a href="source-class-Arya.Sessions.SessionHandler.html#5-68" title="Go to source code">essions/SessionHandler.php</a><br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="exists" id="_exists">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_exists">#</a>
+		<code><a href="source-class-Arya.Sessions.SessionHandler.html#7-14" title="Go to source code">exists</a>( <span>string <var>$sessionId</var></span>, <span>integer <var>$maxAge</var></span> )</code>
+
+		<div class="description short">
+			<p>Does the specified $sessionId exist?</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Does the specified $sessionId exist?</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$sessionId</var></dt>
+					<dd>
+</dd>
+					<dt><var>$maxAge</var></dt>
+					<dd>The maximum allowable age of the session in seconds
+</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>MUST return TRUE if the session exists (and is not expired) and FALSE if not
+
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="open" id="_open">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_open">#</a>
+		<code><a href="source-class-Arya.Sessions.SessionHandler.html#16-24" title="Go to source code">open</a>( <span>string <var>$sessionId</var></span> )</code>
+
+		<div class="description short">
+			<p>Open the backend storage</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Open the backend storage</p>
+
+<p>The session ID to be accessed is provided should the backend session storage require it.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$sessionId</var></dt>
+					<dd>
+</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>MUST return TRUE on success or FALSE in the even of an error
+
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="read" id="_read">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_read">#</a>
+		<code><a href="source-class-Arya.Sessions.SessionHandler.html#26-32" title="Go to source code">read</a>( <span>string <var>$sessionId</var></span> )</code>
+
+		<div class="description short">
+			<p>Read a key-value array of data associated with the specified $sessionId</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Read a key-value array of data associated with the specified $sessionId</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$sessionId</var></dt>
+					<dd>
+</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>MUST return an key-value associative array of stored session variables
+
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="write" id="_write">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_write">#</a>
+		<code><a href="source-class-Arya.Sessions.SessionHandler.html#34-41" title="Go to source code">write</a>( <span>string <var>$sessionId</var></span>, <span>array <var>$data</var></span> )</code>
+
+		<div class="description short">
+			<p>Read a key-value array of data associated with the specified $sessionId</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Read a key-value array of data associated with the specified $sessionId</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$sessionId</var></dt>
+					<dd>
+</dd>
+					<dt><var>$data</var></dt>
+					<dd>$data;
+</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>MUST return TRUE for success and FALSE if writing failed.
+
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="close" id="_close">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_close">#</a>
+		<code><a href="source-class-Arya.Sessions.SessionHandler.html#43-48" title="Go to source code">close</a>( )</code>
+
+		<div class="description short">
+			<p>Release any resources or locks associated with the session handler</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Release any resources or locks associated with the session handler</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>MUST return TRUE on successful close and FALSE if the operation failed
+
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="destroy" id="_destroy">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_destroy">#</a>
+		<code><a href="source-class-Arya.Sessions.SessionHandler.html#50-58" title="Go to source code">destroy</a>( <span>string <var>$sessionId</var></span> )</code>
+
+		<div class="description short">
+			<p>Destroy the session identified by $sessionId</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Destroy the session identified by $sessionId</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$sessionId</var></dt>
+					<dd>
+</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br><p>MUST return FALSE if destruction fails and TRUE otherwise. A non-existent
+             session MUST result in a TRUE return value.</p>
+
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="gc" id="_gc">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_gc">#</a>
+		<code><a href="source-class-Arya.Sessions.SessionHandler.html#60-66" title="Go to source code">gc</a>( <span>integer <var>$maxAge</var></span> )</code>
+
+		<div class="description short">
+			<p>Perform garbage collection of old sessions</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Perform garbage collection of old sessions</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$maxAge</var></dt>
+					<dd>The maximum allowed age of a session in seconds
+</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>MUST return TRUE if no errors occurred and FALSE otherwise
+
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		Arya API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js?721046668"></script>
+<script src="elementlist.js?499789592"></script>
+</body>
+</html>
