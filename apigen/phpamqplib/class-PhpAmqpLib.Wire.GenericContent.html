@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class PhpAmqpLib\Wire\GenericContent</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-PhpAmqpLib.html">
+						PhpAmqpLib<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-PhpAmqpLib.Channel.html">
+						Channel					</a>
+
+						</li>
+				<li>
+					<a href="namespace-PhpAmqpLib.Connection.html">
+						Connection					</a>
+
+						</li>
+				<li>
+					<a href="namespace-PhpAmqpLib.Exception.html">
+						Exception					</a>
+
+						</li>
+				<li>
+					<a href="namespace-PhpAmqpLib.Helper.html">
+						Helper<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-PhpAmqpLib.Helper.Protocol.html">
+						Protocol					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-PhpAmqpLib.Message.html">
+						Message					</a>
+
+						</li>
+				<li class="active">
+					<a href="namespace-PhpAmqpLib.Wire.html">
+						Wire<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-PhpAmqpLib.Wire.IO.html">
+						IO					</a>
+
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-PhpAmqpLib.Wire.AMQPDecimal.html">AMQPDecimal</a></li>
+				<li><a href="class-PhpAmqpLib.Wire.AMQPReader.html">AMQPReader</a></li>
+				<li><a href="class-PhpAmqpLib.Wire.AMQPWriter.html">AMQPWriter</a></li>
+				<li><a href="class-PhpAmqpLib.Wire.Constants080.html">Constants080</a></li>
+				<li><a href="class-PhpAmqpLib.Wire.Constants091.html">Constants091</a></li>
+				<li class="active"><a href="class-PhpAmqpLib.Wire.GenericContent.html">GenericContent</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-PhpAmqpLib.Wire.html" title="Summary of PhpAmqpLib\Wire"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class GenericContent</h1>
+
+
+	<div class="description">
+	<p>Abstract base class for AMQP content.  Subclasses should override
+the PROPERTIES attribute.</p>
+	</div>
+
+
+
+	<div>
+		<h4>Direct known subclasses</h4>
+			<a href="class-PhpAmqpLib.Message.AMQPMessage.html">PhpAmqpLib\Message\AMQPMessage</a>
+	</div>
+
+
+
+
+
+
+	<div class="info">
+		<b>Abstract</b><br>
+		
+		<b>Namespace:</b> <a href="namespace-PhpAmqpLib.html">PhpAmqpLib</a>\<a href="namespace-PhpAmqpLib.Wire.html">Wire</a><br>
+		
+
+			<b>Located at</b> <a href="source-class-PhpAmqpLib.Wire.GenericContent.html#7-205" title="Go to source code">Wire/GenericContent.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-PhpAmqpLib.Wire.GenericContent.html#43-54" title="Go to source code">__construct</a>( <span> <var>$props</var></span>, <span> <var>$prop_types</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="has" id="_has">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_has">#</a>
+		<code><a href="source-class-PhpAmqpLib.Wire.GenericContent.html#58-65" title="Go to source code">has</a>( <span> <var>$name</var></span> )</code>
+
+		<div class="description short">
+			<p>Check whether a property exists in the 'properties' dictionary
+or if present - in the 'delivery_info' dictionary.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Check whether a property exists in the 'properties' dictionary
+or if present - in the 'delivery_info' dictionary.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get" id="_get">
+
+		<td class="attributes"><code>
+			 public 
+
+			mixed|<code><a href="class-PhpAmqpLib.Channel.AMQPChannel.html">PhpAmqpLib\Channel\AMQPChannel</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get">#</a>
+		<code><a href="source-class-PhpAmqpLib.Wire.GenericContent.html#69-85" title="Go to source code">get</a>( <span> <var>$name</var></span> )</code>
+
+		<div class="description short">
+			<p>Look for additional properties in the 'properties' dictionary,
+and if present - the 'delivery_info' dictionary.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Look for additional properties in the 'properties' dictionary,
+and if present - the 'delivery_info' dictionary.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed|<code><a href="class-PhpAmqpLib.Channel.AMQPChannel.html">PhpAmqpLib\Channel\AMQPChannel</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get_properties" id="_get_properties">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get_properties">#</a>
+		<code><a href="source-class-PhpAmqpLib.Wire.GenericContent.html#89-95" title="Go to source code">get_properties</a>( )</code>
+
+		<div class="description short">
+			<p>just return the $this::properties array.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>just return the $this::properties array.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="set" id="_set">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_set">#</a>
+		<code><a href="source-class-PhpAmqpLib.Wire.GenericContent.html#99-109" title="Go to source code">set</a>( <span> <var>$name</var></span>, <span> <var>$value</var></span> )</code>
+
+		<div class="description short">
+			<p>allows to set the property after creation of the object</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>allows to set the property after creation of the object</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="load_properties" id="_load_properties">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_load_properties">#</a>
+		<code><a href="source-class-PhpAmqpLib.Wire.GenericContent.html#113-151" title="Go to source code">load_properties</a>( <span><code><a href="class-PhpAmqpLib.Wire.AMQPReader.html">PhpAmqpLib\Wire\AMQPReader</a></code> <var>$r</var></span> )</code>
+
+		<div class="description short">
+			<p>Given the raw bytes containing the property-flags and
+property-list from a content-frame-header, parse and insert
+into a dictionary stored in this object as an attribute named
+'properties'.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Given the raw bytes containing the property-flags and
+property-list from a content-frame-header, parse and insert
+into a dictionary stored in this object as an attribute named
+'properties'.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$r</var></dt>
+					<dd>NOTE: do not mutate $r</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="serialize_properties" id="_serialize_properties">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_serialize_properties">#</a>
+		<code><a href="source-class-PhpAmqpLib.Wire.GenericContent.html#155-204" title="Go to source code">serialize_properties</a>( )</code>
+
+		<div class="description short">
+			<p>serialize the 'properties' attribute (a dictionary) into the
+raw bytes making up a set of property flags and a property
+list, suitable for putting into a content frame header.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>serialize the 'properties' attribute (a dictionary) into the
+raw bytes making up a set of property flags and a property
+list, suitable for putting into a content frame header.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary properties" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="delivery_info" id="$delivery_info">
+		<td class="attributes"><code>
+			public  
+			array|<code><a href="class-PhpAmqpLib.Channel.AMQPChannel.html">PhpAmqpLib\Channel\AMQPChannel</a>[]</code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PhpAmqpLib.Wire.GenericContent.html#14-17" title="Go to source code"><var>$delivery_info</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$delivery_info" class="anchor">#</a>
+				<code><span class="php-keyword1">array</span>()</code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="prop_types" id="$prop_types">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PhpAmqpLib.Wire.GenericContent.html#19-22" title="Go to source code"><var>$prop_types</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$prop_types" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="PROPERTIES" id="$PROPERTIES">
+		<td class="attributes"><code>
+			protected static 
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PhpAmqpLib.Wire.GenericContent.html#34-39" title="Go to source code"><var>$PROPERTIES</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$PROPERTIES" class="anchor">#</a>
+				<code><span class="php-keyword1">array</span>(
+    <span class="php-quote">&quot;dummy&quot;</span> =&gt; <span class="php-quote">&quot;shortstr&quot;</span>
+)</code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

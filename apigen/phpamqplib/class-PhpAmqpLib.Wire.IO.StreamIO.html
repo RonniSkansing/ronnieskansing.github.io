@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class PhpAmqpLib\Wire\IO\StreamIO</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-PhpAmqpLib.html">
+						PhpAmqpLib<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-PhpAmqpLib.Channel.html">
+						Channel					</a>
+
+						</li>
+				<li>
+					<a href="namespace-PhpAmqpLib.Connection.html">
+						Connection					</a>
+
+						</li>
+				<li>
+					<a href="namespace-PhpAmqpLib.Exception.html">
+						Exception					</a>
+
+						</li>
+				<li>
+					<a href="namespace-PhpAmqpLib.Helper.html">
+						Helper<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-PhpAmqpLib.Helper.Protocol.html">
+						Protocol					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-PhpAmqpLib.Message.html">
+						Message					</a>
+
+						</li>
+				<li class="active">
+					<a href="namespace-PhpAmqpLib.Wire.html">
+						Wire<span></span>
+					</a>
+
+						<ul>
+				<li class="active">
+					<a href="namespace-PhpAmqpLib.Wire.IO.html">
+						IO					</a>
+
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-PhpAmqpLib.Wire.IO.AbstractIO.html">AbstractIO</a></li>
+				<li><a href="class-PhpAmqpLib.Wire.IO.SocketIO.html">SocketIO</a></li>
+				<li class="active"><a href="class-PhpAmqpLib.Wire.IO.StreamIO.html">StreamIO</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-PhpAmqpLib.Wire.IO.html" title="Summary of PhpAmqpLib\Wire\IO"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class StreamIO</h1>
+
+
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-PhpAmqpLib.Wire.IO.AbstractIO.html"><span>PhpAmqpLib\Wire\IO\AbstractIO</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by">
+<b><span>PhpAmqpLib\Wire\IO\StreamIO</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-PhpAmqpLib.html">PhpAmqpLib</a>\<a href="namespace-PhpAmqpLib.Wire.html">Wire</a>\<a href="namespace-PhpAmqpLib.Wire.IO.html">IO</a><br>
+		
+
+			<b>Located at</b> <a href="source-class-PhpAmqpLib.Wire.IO.StreamIO.html#11-277" title="Go to source code">Wire/IO/StreamIO.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-PhpAmqpLib.Wire.IO.StreamIO.html#70-81" title="Go to source code">__construct</a>( <span> <var>$host</var></span>, <span> <var>$port</var></span>, <span> <var>$connection_timeout</var></span>, <span> <var>$read_write_timeout</var></span>, <span> <var>$context</var> = <span class="php-keyword1">null</span></span>, <span> <var>$keepalive</var> = <span class="php-keyword1">false</span></span>, <span> <var>$heartbeat</var> = <span class="php-num">0</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="connect" id="_connect">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_connect">#</a>
+		<code><a href="source-class-PhpAmqpLib.Wire.IO.StreamIO.html#85-117" title="Go to source code">connect</a>( )</code>
+
+		<div class="description short">
+			<p>Setup the stream connection</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Setup the stream connection</p>
+
+
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-PhpAmqpLib.Exception.AMQPRuntimeException.html">PhpAmqpLib\Exception\AMQPRuntimeException</a></code><br>
+					Exception
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="reconnect" id="_reconnect">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_reconnect">#</a>
+		<code><a href="source-class-PhpAmqpLib.Wire.IO.StreamIO.html#119-126" title="Go to source code">reconnect</a>( )</code>
+
+		<div class="description short">
+			<p>Reconnect the socket</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Reconnect the socket</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="read" id="_read">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_read">#</a>
+		<code><a href="source-class-PhpAmqpLib.Wire.IO.StreamIO.html#130-157" title="Go to source code">read</a>( <span> <var>$n</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="write" id="_write">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_write">#</a>
+		<code><a href="source-class-PhpAmqpLib.Wire.IO.StreamIO.html#161-190" title="Go to source code">write</a>( <span> <var>$data</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="check_heartbeat" id="_check_heartbeat">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_check_heartbeat">#</a>
+		<code><a href="source-class-PhpAmqpLib.Wire.IO.StreamIO.html#194-212" title="Go to source code">check_heartbeat</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="write_heartbeat" id="_write_heartbeat">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_write_heartbeat">#</a>
+		<code><a href="source-class-PhpAmqpLib.Wire.IO.StreamIO.html#216-225" title="Go to source code">write_heartbeat</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="close" id="_close">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_close">#</a>
+		<code><a href="source-class-PhpAmqpLib.Wire.IO.StreamIO.html#229-235" title="Go to source code">close</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get_socket" id="_get_socket">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get_socket">#</a>
+		<code><a href="source-class-PhpAmqpLib.Wire.IO.StreamIO.html#239-242" title="Go to source code">get_socket</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="select" id="_select">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_select">#</a>
+		<code><a href="source-class-PhpAmqpLib.Wire.IO.StreamIO.html#246-252" title="Go to source code">select</a>( <span> <var>$sec</var></span>, <span> <var>$usec</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="timed_out" id="_timed_out">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_timed_out">#</a>
+		<code><a href="source-class-PhpAmqpLib.Wire.IO.StreamIO.html#256-261" title="Go to source code">timed_out</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="enable_keepalive" id="_enable_keepalive">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_enable_keepalive">#</a>
+		<code><a href="source-class-PhpAmqpLib.Wire.IO.StreamIO.html#263-275" title="Go to source code">enable_keepalive</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary properties" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="host" id="$host">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PhpAmqpLib.Wire.IO.StreamIO.html#14-17" title="Go to source code"><var>$host</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$host" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="port" id="$port">
+		<td class="attributes"><code>
+			protected  
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PhpAmqpLib.Wire.IO.StreamIO.html#19-22" title="Go to source code"><var>$port</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$port" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="connection_timeout" id="$connection_timeout">
+		<td class="attributes"><code>
+			protected  
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PhpAmqpLib.Wire.IO.StreamIO.html#24-27" title="Go to source code"><var>$connection_timeout</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$connection_timeout" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="read_write_timeout" id="$read_write_timeout">
+		<td class="attributes"><code>
+			protected  
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PhpAmqpLib.Wire.IO.StreamIO.html#29-32" title="Go to source code"><var>$read_write_timeout</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$read_write_timeout" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="context" id="$context">
+		<td class="attributes"><code>
+			protected  
+			resource
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PhpAmqpLib.Wire.IO.StreamIO.html#34-37" title="Go to source code"><var>$context</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$context" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="keepalive" id="$keepalive">
+		<td class="attributes"><code>
+			protected  
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PhpAmqpLib.Wire.IO.StreamIO.html#39-42" title="Go to source code"><var>$keepalive</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$keepalive" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="heartbeat" id="$heartbeat">
+		<td class="attributes"><code>
+			protected  
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PhpAmqpLib.Wire.IO.StreamIO.html#44-47" title="Go to source code"><var>$heartbeat</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$heartbeat" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="last_read" id="$last_read">
+		<td class="attributes"><code>
+			protected  
+			float
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PhpAmqpLib.Wire.IO.StreamIO.html#49-52" title="Go to source code"><var>$last_read</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$last_read" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="last_write" id="$last_write">
+		<td class="attributes"><code>
+			protected  
+			float
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PhpAmqpLib.Wire.IO.StreamIO.html#54-57" title="Go to source code"><var>$last_write</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$last_write" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

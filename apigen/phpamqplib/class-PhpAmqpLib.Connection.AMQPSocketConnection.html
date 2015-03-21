@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class PhpAmqpLib\Connection\AMQPSocketConnection</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-PhpAmqpLib.html">
+						PhpAmqpLib<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-PhpAmqpLib.Channel.html">
+						Channel					</a>
+
+						</li>
+				<li class="active">
+					<a href="namespace-PhpAmqpLib.Connection.html">
+						Connection					</a>
+
+						</li>
+				<li>
+					<a href="namespace-PhpAmqpLib.Exception.html">
+						Exception					</a>
+
+						</li>
+				<li>
+					<a href="namespace-PhpAmqpLib.Helper.html">
+						Helper<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-PhpAmqpLib.Helper.Protocol.html">
+						Protocol					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-PhpAmqpLib.Message.html">
+						Message					</a>
+
+						</li>
+				<li>
+					<a href="namespace-PhpAmqpLib.Wire.html">
+						Wire<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-PhpAmqpLib.Wire.IO.html">
+						IO					</a>
+
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-PhpAmqpLib.Connection.AbstractConnection.html">AbstractConnection</a></li>
+				<li><a href="class-PhpAmqpLib.Connection.AMQPConnection.html">AMQPConnection</a></li>
+				<li><a href="class-PhpAmqpLib.Connection.AMQPLazyConnection.html">AMQPLazyConnection</a></li>
+				<li class="active"><a href="class-PhpAmqpLib.Connection.AMQPSocketConnection.html">AMQPSocketConnection</a></li>
+				<li><a href="class-PhpAmqpLib.Connection.AMQPSSLConnection.html">AMQPSSLConnection</a></li>
+				<li><a href="class-PhpAmqpLib.Connection.AMQPStreamConnection.html">AMQPStreamConnection</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-PhpAmqpLib.Connection.html" title="Summary of PhpAmqpLib\Connection"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class AMQPSocketConnection</h1>
+
+
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-PhpAmqpLib.Channel.AbstractChannel.html"><span>PhpAmqpLib\Channel\AbstractChannel</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by">
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html"><span>PhpAmqpLib\Connection\AbstractConnection</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:60px">
+			<img src="resources/inherit.png" alt="Extended by">
+<b><span>PhpAmqpLib\Connection\AMQPSocketConnection</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-PhpAmqpLib.html">PhpAmqpLib</a>\<a href="namespace-PhpAmqpLib.Connection.html">Connection</a><br>
+		
+
+			<b>Located at</b> <a href="source-class-PhpAmqpLib.Connection.AMQPSocketConnection.html#7-28" title="Go to source code">Connection/AMQPSocketConnection.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-PhpAmqpLib.Connection.AMQPSocketConnection.html#10-26" title="Go to source code">__construct</a>( <span><code><a href="class-PhpAmqpLib.Connection.AbstractConnection.html">PhpAmqpLib\Connection\AbstractConnection</a></code> <var>$host</var></span>, <span>string <var>$port</var></span>, <span> <var>$user</var></span>, <span> <var>$password</var></span>, <span> <var>$vhost</var> = <span class="php-quote">&quot;/&quot;</span></span>, <span> <var>$insist</var> = <span class="php-keyword1">false</span></span>, <span> <var>$login_method</var> = <span class="php-quote">&quot;AMQPLAIN&quot;</span></span>, <span> <var>$login_response</var> = <span class="php-keyword1">null</span></span>, <span> <var>$locale</var> = <span class="php-quote">&quot;en_US&quot;</span></span>, <span> <var>$timeout</var> = <span class="php-num">3</span></span>, <span> <var>$keepalive</var> = <span class="php-keyword1">false</span> </span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$host</var></dt>
+					<dd>$connection</dd>
+					<dt><var>$port</var></dt>
+					<dd>$channel_id</dd>
+					<dt><var>$user</var></dt>
+					<dd></dd>
+					<dt><var>$password</var></dt>
+					<dd></dd>
+					<dt><var>$vhost</var></dt>
+					<dd></dd>
+					<dt><var>$insist</var></dt>
+					<dd></dd>
+					<dt><var>$login_method</var></dt>
+					<dd></dd>
+					<dt><var>$login_response</var></dt>
+					<dd></dd>
+					<dt><var>$locale</var></dt>
+					<dd></dd>
+					<dt><var>$timeout</var></dt>
+					<dd></dd>
+					<dt><var>$keepalive</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-PhpAmqpLib.Connection.AbstractConnection.html#___construct">PhpAmqpLib\Connection\AbstractConnection::__construct()</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-PhpAmqpLib.Connection.AbstractConnection.html#methods">PhpAmqpLib\Connection\AbstractConnection</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#___clone">__clone()</a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#___destruct">__destruct()</a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#_channel">channel()</a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#_close">close()</a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#_closeChannels">closeChannels()</a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#_close_socket">close_socket()</a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#_connect">connect()</a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#_connectOnConstruct">connectOnConstruct()</a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#_connection_blocked">connection_blocked()</a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#_connection_close">connection_close()</a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#_connection_close_ok">connection_close_ok()</a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#_connection_open_ok">connection_open_ok()</a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#_connection_redirect">connection_redirect()</a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#_connection_secure">connection_secure()</a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#_connection_start">connection_start()</a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#_connection_tune">connection_tune()</a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#_connection_unblocked">connection_unblocked()</a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#_do_close">do_close()</a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#_dump_table">dump_table()</a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#_getIO">getIO()</a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#_getSocket">getSocket()</a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#_get_free_channel_id">get_free_channel_id()</a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#_isConnected">isConnected()</a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#_prepare_channel_method_frame">prepare_channel_method_frame()</a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#_prepare_content">prepare_content()</a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#_reconnect">reconnect()</a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#_safeClose">safeClose()</a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#_select">select()</a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#_send_channel_method_frame">send_channel_method_frame()</a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#_send_content">send_content()</a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#_setIsConnected">setIsConnected()</a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#_set_close_on_destruct">set_close_on_destruct()</a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#_set_connection_block_handler">set_connection_block_handler()</a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#_set_connection_unblock_handler">set_connection_unblock_handler()</a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#_wait_channel">wait_channel()</a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#_wait_frame">wait_frame()</a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#_write">write()</a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#_x_close_ok">x_close_ok()</a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#_x_open">x_open()</a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#_x_secure_ok">x_secure_ok()</a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#_x_start_ok">x_start_ok()</a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#_x_tune_ok">x_tune_ok()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-PhpAmqpLib.Channel.AbstractChannel.html#methods">PhpAmqpLib\Channel\AbstractChannel</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-PhpAmqpLib.Channel.AbstractChannel.html#_dispatch">dispatch()</a>, 
+			<a href="class-PhpAmqpLib.Channel.AbstractChannel.html#_dispatch_to_handler">dispatch_to_handler()</a>, 
+			<a href="class-PhpAmqpLib.Channel.AbstractChannel.html#_getChannelId">getChannelId()</a>, 
+			<a href="class-PhpAmqpLib.Channel.AbstractChannel.html#_next_frame">next_frame()</a>, 
+			<a href="class-PhpAmqpLib.Channel.AbstractChannel.html#_prepare_method_frame">prepare_method_frame()</a>, 
+			<a href="class-PhpAmqpLib.Channel.AbstractChannel.html#_send_method_frame">send_method_frame()</a>, 
+			<a href="class-PhpAmqpLib.Channel.AbstractChannel.html#_wait">wait()</a>, 
+			<a href="class-PhpAmqpLib.Channel.AbstractChannel.html#_wait_content">wait_content()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary inherited">
+	<caption>Properties inherited from <a href="class-PhpAmqpLib.Connection.AbstractConnection.html#properties">PhpAmqpLib\Connection\AbstractConnection</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#$LIBRARY_PROPERTIES"><var>$LIBRARY_PROPERTIES</var></a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#$channel_max"><var>$channel_max</var></a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#$channels"><var>$channels</var></a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#$close_on_destruct"><var>$close_on_destruct</var></a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#$construct_params"><var>$construct_params</var></a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#$frame_max"><var>$frame_max</var></a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#$heartbeat"><var>$heartbeat</var></a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#$input"><var>$input</var></a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#$insist"><var>$insist</var></a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#$io"><var>$io</var></a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#$is_connected"><var>$is_connected</var></a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#$known_hosts"><var>$known_hosts</var></a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#$locale"><var>$locale</var></a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#$locales"><var>$locales</var></a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#$login_method"><var>$login_method</var></a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#$login_response"><var>$login_response</var></a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#$mechanisms"><var>$mechanisms</var></a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#$server_properties"><var>$server_properties</var></a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#$sock"><var>$sock</var></a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#$version_major"><var>$version_major</var></a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#$version_minor"><var>$version_minor</var></a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#$vhost"><var>$vhost</var></a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#$wait_frame_reader"><var>$wait_frame_reader</var></a>, 
+			<a href="class-PhpAmqpLib.Connection.AbstractConnection.html#$wait_tune_ok"><var>$wait_tune_ok</var></a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
+	<caption>Properties inherited from <a href="class-PhpAmqpLib.Channel.AbstractChannel.html#properties">PhpAmqpLib\Channel\AbstractChannel</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-PhpAmqpLib.Channel.AbstractChannel.html#$PROTOCOL_CONSTANTS_CLASS"><var>$PROTOCOL_CONSTANTS_CLASS</var></a>, 
+			<a href="class-PhpAmqpLib.Channel.AbstractChannel.html#$amqp_protocol_header"><var>$amqp_protocol_header</var></a>, 
+			<a href="class-PhpAmqpLib.Channel.AbstractChannel.html#$auto_decode"><var>$auto_decode</var></a>, 
+			<a href="class-PhpAmqpLib.Channel.AbstractChannel.html#$channel_id"><var>$channel_id</var></a>, 
+			<a href="class-PhpAmqpLib.Channel.AbstractChannel.html#$connection"><var>$connection</var></a>, 
+			<a href="class-PhpAmqpLib.Channel.AbstractChannel.html#$debug"><var>$debug</var></a>, 
+			<a href="class-PhpAmqpLib.Channel.AbstractChannel.html#$dispatch_reader"><var>$dispatch_reader</var></a>, 
+			<a href="class-PhpAmqpLib.Channel.AbstractChannel.html#$frame_queue"><var>$frame_queue</var></a>, 
+			<a href="class-PhpAmqpLib.Channel.AbstractChannel.html#$methodMap"><var>$methodMap</var></a>, 
+			<a href="class-PhpAmqpLib.Channel.AbstractChannel.html#$method_queue"><var>$method_queue</var></a>, 
+			<a href="class-PhpAmqpLib.Channel.AbstractChannel.html#$msg_property_reader"><var>$msg_property_reader</var></a>, 
+			<a href="class-PhpAmqpLib.Channel.AbstractChannel.html#$protocolVersion"><var>$protocolVersion</var></a>, 
+			<a href="class-PhpAmqpLib.Channel.AbstractChannel.html#$protocolWriter"><var>$protocolWriter</var></a>, 
+			<a href="class-PhpAmqpLib.Channel.AbstractChannel.html#$waitHelper"><var>$waitHelper</var></a>, 
+			<a href="class-PhpAmqpLib.Channel.AbstractChannel.html#$wait_content_reader"><var>$wait_content_reader</var></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

@@ -1,0 +1,2339 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class PhpAmqpLib\Connection\AbstractConnection</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-PhpAmqpLib.html">
+						PhpAmqpLib<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-PhpAmqpLib.Channel.html">
+						Channel					</a>
+
+						</li>
+				<li class="active">
+					<a href="namespace-PhpAmqpLib.Connection.html">
+						Connection					</a>
+
+						</li>
+				<li>
+					<a href="namespace-PhpAmqpLib.Exception.html">
+						Exception					</a>
+
+						</li>
+				<li>
+					<a href="namespace-PhpAmqpLib.Helper.html">
+						Helper<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-PhpAmqpLib.Helper.Protocol.html">
+						Protocol					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-PhpAmqpLib.Message.html">
+						Message					</a>
+
+						</li>
+				<li>
+					<a href="namespace-PhpAmqpLib.Wire.html">
+						Wire<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-PhpAmqpLib.Wire.IO.html">
+						IO					</a>
+
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-PhpAmqpLib.Connection.AbstractConnection.html">AbstractConnection</a></li>
+				<li><a href="class-PhpAmqpLib.Connection.AMQPConnection.html">AMQPConnection</a></li>
+				<li><a href="class-PhpAmqpLib.Connection.AMQPLazyConnection.html">AMQPLazyConnection</a></li>
+				<li><a href="class-PhpAmqpLib.Connection.AMQPSocketConnection.html">AMQPSocketConnection</a></li>
+				<li><a href="class-PhpAmqpLib.Connection.AMQPSSLConnection.html">AMQPSSLConnection</a></li>
+				<li><a href="class-PhpAmqpLib.Connection.AMQPStreamConnection.html">AMQPStreamConnection</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-PhpAmqpLib.Connection.html" title="Summary of PhpAmqpLib\Connection"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class AbstractConnection</h1>
+
+
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-PhpAmqpLib.Channel.AbstractChannel.html"><span>PhpAmqpLib\Channel\AbstractChannel</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by">
+<b><span>PhpAmqpLib\Connection\AbstractConnection</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+	<div>
+		<h4>Direct known subclasses</h4>
+			<a href="class-PhpAmqpLib.Connection.AMQPSocketConnection.html">PhpAmqpLib\Connection\AMQPSocketConnection</a>, 
+			<a href="class-PhpAmqpLib.Connection.AMQPStreamConnection.html">PhpAmqpLib\Connection\AMQPStreamConnection</a>
+	</div>
+
+	<div>
+		<h4>Indirect known subclasses</h4>
+			<a href="class-PhpAmqpLib.Connection.AMQPConnection.html">PhpAmqpLib\Connection\AMQPConnection</a>, 
+			<a href="class-PhpAmqpLib.Connection.AMQPLazyConnection.html">PhpAmqpLib\Connection\AMQPLazyConnection</a>, 
+			<a href="class-PhpAmqpLib.Connection.AMQPSSLConnection.html">PhpAmqpLib\Connection\AMQPSSLConnection</a>
+	</div>
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-PhpAmqpLib.html">PhpAmqpLib</a>\<a href="namespace-PhpAmqpLib.Connection.html">Connection</a><br>
+		
+
+			<b>Located at</b> <a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#16-1026" title="Go to source code">Connection/AbstractConnection.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#186-231" title="Go to source code">__construct</a>( <span><code><a href="class-PhpAmqpLib.Connection.AbstractConnection.html">PhpAmqpLib\Connection\AbstractConnection</a></code> <var>$user</var></span>, <span>string <var>$password</var></span>, <span> <var>$vhost</var></span>, <span> <var>$insist</var></span>, <span> <var>$login_method</var></span>, <span> <var>$login_response</var></span>, <span> <var>$locale</var></span>, <span><code><a href="class-PhpAmqpLib.Wire.IO.AbstractIO.html">PhpAmqpLib\Wire\IO\AbstractIO</a></code> <var>$io</var></span>, <span> <var>$heartbeat</var> = <span class="php-num">0</span> </span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$user</var></dt>
+					<dd>$connection</dd>
+					<dt><var>$password</var></dt>
+					<dd>$channel_id</dd>
+					<dt><var>$vhost</var></dt>
+					<dd></dd>
+					<dt><var>$insist</var></dt>
+					<dd></dd>
+					<dt><var>$login_method</var></dt>
+					<dd></dd>
+					<dt><var>$login_response</var></dt>
+					<dd></dd>
+					<dt><var>$locale</var></dt>
+					<dd></dd>
+					<dt><var>$io</var></dt>
+					<dd></dd>
+					<dt><var>$heartbeat</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-PhpAmqpLib.Channel.AbstractChannel.html#___construct">PhpAmqpLib\Channel\AbstractChannel::__construct()</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="connect" id="_connect">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_connect">#</a>
+		<code><a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#235-285" title="Go to source code">connect</a>( )</code>
+
+		<div class="description short">
+			<p>Make the connection to the AMQP server</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Make the connection to the AMQP server</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="reconnect" id="_reconnect">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_reconnect">#</a>
+		<code><a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#289-304" title="Go to source code">reconnect</a>( )</code>
+
+		<div class="description short">
+			<p>Reconnect using the original connection settings, this will not recreate any channels that were established previously</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Reconnect using the original connection settings, this will not recreate any channels that were established previously</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__clone" id="___clone">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___clone">#</a>
+		<code><a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#308-314" title="Go to source code">__clone</a>( )</code>
+
+		<div class="description short">
+			<p>cloning will use the old properties to make a new connection to the same server</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>cloning will use the old properties to make a new connection to the same server</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__destruct" id="___destruct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___destruct">#</a>
+		<code><a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#318-323" title="Go to source code">__destruct</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="safeClose" id="_safeClose">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_safeClose">#</a>
+		<code><a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#327-346" title="Go to source code">safeClose</a>( )</code>
+
+		<div class="description short">
+			<p>Attempt to close the connection safely</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Attempt to close the connection safely</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="select" id="_select">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_select">#</a>
+		<code><a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#350-353" title="Go to source code">select</a>( <span> <var>$sec</var></span>, <span> <var>$usec</var> = <span class="php-num">0</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="set_close_on_destruct" id="_set_close_on_destruct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_set_close_on_destruct">#</a>
+		<code><a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#357-365" title="Go to source code">set_close_on_destruct</a>( <span>boolean <var>$close</var> = <span class="php-keyword1">true</span></span> )</code>
+
+		<div class="description short">
+			<p>allows to not close the connection
+it<code>s useful after the fork when you don</code>t want to close parent process connection</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>allows to not close the connection
+it<code>s useful after the fork when you don</code>t want to close parent process connection</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$close</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="close_socket" id="_close_socket">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_close_socket">#</a>
+		<code><a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#369-376" title="Go to source code">close_socket</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="write" id="_write">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_write">#</a>
+		<code><a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#380-388" title="Go to source code">write</a>( <span> <var>$data</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="do_close" id="_do_close">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_do_close">#</a>
+		<code><a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#392-400" title="Go to source code">do_close</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get_free_channel_id" id="_get_free_channel_id">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get_free_channel_id">#</a>
+		<code><a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#404-413" title="Go to source code">get_free_channel_id</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="send_content" id="_send_content">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_send_content">#</a>
+		<code><a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#417-430" title="Go to source code">send_content</a>( <span>string <var>$channel</var></span>, <span>integer <var>$class_id</var></span>, <span>integer <var>$weight</var></span>, <span>integer <var>$body_size</var></span>, <span>string <var>$packed_properties</var></span>, <span>string <var>$body</var></span>, <span><code><a href="class-PhpAmqpLib.Wire.AMQPWriter.html">PhpAmqpLib\Wire\AMQPWriter</a></code> <var>$pkt</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$channel</var></dt>
+					<dd></dd>
+					<dt><var>$class_id</var></dt>
+					<dd></dd>
+					<dt><var>$weight</var></dt>
+					<dd></dd>
+					<dt><var>$body_size</var></dt>
+					<dd></dd>
+					<dt><var>$packed_properties</var></dt>
+					<dd></dd>
+					<dt><var>$body</var></dt>
+					<dd></dd>
+					<dt><var>$pkt</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="prepare_content" id="_prepare_content">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-PhpAmqpLib.Wire.AMQPWriter.html">PhpAmqpLib\Wire\AMQPWriter</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_prepare_content">#</a>
+		<code><a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#434-490" title="Go to source code">prepare_content</a>( <span>string <var>$channel</var></span>, <span>integer <var>$class_id</var></span>, <span>integer <var>$weight</var></span>, <span>integer <var>$body_size</var></span>, <span>string <var>$packed_properties</var></span>, <span>string <var>$body</var></span>, <span><code><a href="class-PhpAmqpLib.Wire.AMQPWriter.html">PhpAmqpLib\Wire\AMQPWriter</a></code> <var>$pkt</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>returns a new AMQPWriter or mutates the provided $pkt</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>returns a new AMQPWriter or mutates the provided $pkt</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$channel</var></dt>
+					<dd></dd>
+					<dt><var>$class_id</var></dt>
+					<dd></dd>
+					<dt><var>$weight</var></dt>
+					<dd></dd>
+					<dt><var>$body_size</var></dt>
+					<dd></dd>
+					<dt><var>$packed_properties</var></dt>
+					<dd></dd>
+					<dt><var>$body</var></dt>
+					<dd></dd>
+					<dt><var>$pkt</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-PhpAmqpLib.Wire.AMQPWriter.html">PhpAmqpLib\Wire\AMQPWriter</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="send_channel_method_frame" id="_send_channel_method_frame">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_send_channel_method_frame">#</a>
+		<code><a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#494-506" title="Go to source code">send_channel_method_frame</a>( <span> <var>$channel</var></span>, <span> <var>$method_sig</var></span>, <span> <var>$args</var> = <span class="php-quote">&quot;&quot;</span></span>, <span> <var>$pkt</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="prepare_channel_method_frame" id="_prepare_channel_method_frame">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_prepare_channel_method_frame">#</a>
+		<code><a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#510-541" title="Go to source code">prepare_channel_method_frame</a>( <span> <var>$channel</var></span>, <span> <var>$method_sig</var></span>, <span> <var>$args</var> = <span class="php-quote">&quot;&quot;</span></span>, <span> <var>$pkt</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>returns a new AMQPWriter or mutates the provided $pkt</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>returns a new AMQPWriter or mutates the provided $pkt</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="wait_frame" id="_wait_frame">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_wait_frame">#</a>
+		<code><a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#545-581" title="Go to source code">wait_frame</a>( <span> <var>$timeout</var> = <span class="php-num">0</span></span> )</code>
+
+		<div class="description short">
+			<p>Wait for a frame from the server</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Wait for a frame from the server</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="wait_channel" id="_wait_channel">
+
+		<td class="attributes"><code>
+			 protected 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_wait_channel">#</a>
+		<code><a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#585-620" title="Go to source code">wait_channel</a>( <span> <var>$channel_id</var></span>, <span>integer <var>$timeout</var> = <span class="php-num">0</span></span> )</code>
+
+		<div class="description short">
+			<p>Wait for a frame from the server destined for
+a particular channel.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Wait for a frame from the server destined for
+a particular channel.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$channel_id</var></dt>
+					<dd></dd>
+					<dt><var>$timeout</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="channel" id="_channel">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_channel">#</a>
+		<code><a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#624-640" title="Go to source code">channel</a>( <span> <var>$channel_id</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>Fetch a Channel object identified by the numeric channel_id, or
+create that object if it doesn't already exist.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Fetch a Channel object identified by the numeric channel_id, or
+create that object if it doesn't already exist.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="close" id="_close">
+
+		<td class="attributes"><code>
+			 public 
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_close">#</a>
+		<code><a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#644-670" title="Go to source code">close</a>( <span> <var>$reply_code</var> = <span class="php-num">0</span></span>, <span> <var>$reply_text</var> = <span class="php-quote">&quot;&quot;</span></span>, <span> <var>$method_sig</var> = <span class="php-keyword1">array</span>(<span class="php-num">0</span>, <span class="php-num">0</span>)</span> )</code>
+
+		<div class="description short">
+			<p>request a connection close</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>request a connection close</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="dump_table" id="_dump_table">
+
+		<td class="attributes"><code>
+			 public static
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_dump_table">#</a>
+		<code><a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#674-696" title="Go to source code">dump_table</a>( <span> <var>$table</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="connection_close" id="_connection_close">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_connection_close">#</a>
+		<code><a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#700-714" title="Go to source code">connection_close</a>( <span><code><a href="class-PhpAmqpLib.Wire.AMQPReader.html">PhpAmqpLib\Wire\AMQPReader</a></code> <var>$args</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$args</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-PhpAmqpLib.Exception.AMQPProtocolConnectionException.html">PhpAmqpLib\Exception\AMQPProtocolConnectionException</a></code>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="x_close_ok" id="_x_close_ok">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_x_close_ok">#</a>
+		<code><a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#718-725" title="Go to source code">x_close_ok</a>( )</code>
+
+		<div class="description short">
+			<p>confirm a connection close</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>confirm a connection close</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="connection_close_ok" id="_connection_close_ok">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_connection_close_ok">#</a>
+		<code><a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#729-737" title="Go to source code">connection_close_ok</a>( <span><code><a href="class-PhpAmqpLib.Wire.AMQPReader.html">PhpAmqpLib\Wire\AMQPReader</a></code> <var>$args</var></span> )</code>
+
+		<div class="description short">
+			<p>confirm a connection close</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>confirm a connection close</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$args</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="x_open" id="_x_open">
+
+		<td class="attributes"><code>
+			 protected 
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_x_open">#</a>
+		<code><a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#741-764" title="Go to source code">x_open</a>( <span> <var>$virtual_host</var></span>, <span>string <var>$capabilities</var> = <span class="php-quote">&quot;&quot;</span></span>, <span>boolean <var>$insist</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$virtual_host</var></dt>
+					<dd></dd>
+					<dt><var>$capabilities</var></dt>
+					<dd></dd>
+					<dt><var>$insist</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="connection_open_ok" id="_connection_open_ok">
+
+		<td class="attributes"><code>
+			 protected 
+
+			null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_connection_open_ok">#</a>
+		<code><a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#768-782" title="Go to source code">connection_open_ok</a>( <span><code><a href="class-PhpAmqpLib.Wire.AMQPReader.html">PhpAmqpLib\Wire\AMQPReader</a></code> <var>$args</var></span> )</code>
+
+		<div class="description short">
+			<p>signal that the connection is ready</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>signal that the connection is ready</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$args</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					null
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="connection_redirect" id="_connection_redirect">
+
+		<td class="attributes"><code>
+			 protected 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_connection_redirect">#</a>
+		<code><a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#786-801" title="Go to source code">connection_redirect</a>( <span><code><a href="class-PhpAmqpLib.Wire.AMQPReader.html">PhpAmqpLib\Wire\AMQPReader</a></code> <var>$args</var></span> )</code>
+
+		<div class="description short">
+			<p>asks the client to use a different server</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>asks the client to use a different server</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$args</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="connection_secure" id="_connection_secure">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_connection_secure">#</a>
+		<code><a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#805-813" title="Go to source code">connection_secure</a>( <span><code><a href="class-PhpAmqpLib.Wire.AMQPReader.html">PhpAmqpLib\Wire\AMQPReader</a></code> <var>$args</var></span> )</code>
+
+		<div class="description short">
+			<p>security mechanism challenge</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>security mechanism challenge</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$args</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="x_secure_ok" id="_x_secure_ok">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_x_secure_ok">#</a>
+		<code><a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#817-825" title="Go to source code">x_secure_ok</a>( <span> <var>$response</var></span> )</code>
+
+		<div class="description short">
+			<p>security mechanism response</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>security mechanism response</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="connection_start" id="_connection_start">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_connection_start">#</a>
+		<code><a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#829-853" title="Go to source code">connection_start</a>( <span><code><a href="class-PhpAmqpLib.Wire.AMQPReader.html">PhpAmqpLib\Wire\AMQPReader</a></code> <var>$args</var></span> )</code>
+
+		<div class="description short">
+			<p>start connection negotiation</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>start connection negotiation</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$args</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="x_start_ok" id="_x_start_ok">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_x_start_ok">#</a>
+		<code><a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#857-865" title="Go to source code">x_start_ok</a>( <span> <var>$client_properties</var></span>, <span> <var>$mechanism</var></span>, <span> <var>$response</var></span>, <span> <var>$locale</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="connection_tune" id="_connection_tune">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_connection_tune">#</a>
+		<code><a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#869-892" title="Go to source code">connection_tune</a>( <span><code><a href="class-PhpAmqpLib.Wire.AMQPReader.html">PhpAmqpLib\Wire\AMQPReader</a></code> <var>$args</var></span> )</code>
+
+		<div class="description short">
+			<p>propose connection tuning parameters</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>propose connection tuning parameters</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$args</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="x_tune_ok" id="_x_tune_ok">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_x_tune_ok">#</a>
+		<code><a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#896-907" title="Go to source code">x_tune_ok</a>( <span> <var>$channel_max</var></span>, <span> <var>$frame_max</var></span>, <span> <var>$heartbeat</var></span> )</code>
+
+		<div class="description short">
+			<p>negotiate connection tuning parameters</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>negotiate connection tuning parameters</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getSocket" id="_getSocket">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-PhpAmqpLib.Wire.IO.SocketIO.html">PhpAmqpLib\Wire\IO\SocketIO</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getSocket">#</a>
+		<code><a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#911-919" title="Go to source code">getSocket</a>( )</code>
+
+		<div class="description short">
+			<p>get socket from current connection</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>get socket from current connection</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-PhpAmqpLib.Wire.IO.SocketIO.html">PhpAmqpLib\Wire\IO\SocketIO</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getIO" id="_getIO">
+
+		<td class="attributes"><code>
+			 protected 
+
+			<code><a href="class-PhpAmqpLib.Wire.IO.AbstractIO.html">PhpAmqpLib\Wire\IO\AbstractIO</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getIO">#</a>
+		<code><a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#923-929" title="Go to source code">getIO</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-PhpAmqpLib.Wire.IO.AbstractIO.html">PhpAmqpLib\Wire\IO\AbstractIO</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="connection_blocked" id="_connection_blocked">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_connection_blocked">#</a>
+		<code><a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#933-942" title="Go to source code">connection_blocked</a>( <span><code><a href="class-PhpAmqpLib.Wire.AMQPReader.html">PhpAmqpLib\Wire\AMQPReader</a></code> <var>$args</var></span> )</code>
+
+		<div class="description short">
+			<p>Handles connection blocked notifications</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Handles connection blocked notifications</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$args</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="connection_unblocked" id="_connection_unblocked">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_connection_unblocked">#</a>
+		<code><a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#946-955" title="Go to source code">connection_unblocked</a>( <span><code><a href="class-PhpAmqpLib.Wire.AMQPReader.html">PhpAmqpLib\Wire\AMQPReader</a></code> <var>$args</var></span> )</code>
+
+		<div class="description short">
+			<p>Handles connection unblocked notifications</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Handles connection unblocked notifications</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$args</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="set_connection_block_handler" id="_set_connection_block_handler">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_set_connection_block_handler">#</a>
+		<code><a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#959-967" title="Go to source code">set_connection_block_handler</a>( <span>callable <var>$callback</var></span> )</code>
+
+		<div class="description short">
+			<p>Sets a handler which is called whenever a connection.block is sent from the server</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Sets a handler which is called whenever a connection.block is sent from the server</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$callback</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="set_connection_unblock_handler" id="_set_connection_unblock_handler">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_set_connection_unblock_handler">#</a>
+		<code><a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#971-979" title="Go to source code">set_connection_unblock_handler</a>( <span>callable <var>$callback</var></span> )</code>
+
+		<div class="description short">
+			<p>Sets a handler which is called whenever a connection.block is sent from the server</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Sets a handler which is called whenever a connection.block is sent from the server</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$callback</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isConnected" id="_isConnected">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isConnected">#</a>
+		<code><a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#983-990" title="Go to source code">isConnected</a>( )</code>
+
+		<div class="description short">
+			<p>Get the connection status</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get the connection status</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setIsConnected" id="_setIsConnected">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setIsConnected">#</a>
+		<code><a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#993-1000" title="Go to source code">setIsConnected</a>( <span>boolean <var>$is_connected</var></span> )</code>
+
+		<div class="description short">
+			<p>Set the connection status</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set the connection status</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$is_connected</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="closeChannels" id="_closeChannels">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_closeChannels">#</a>
+		<code><a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#1002-1014" title="Go to source code">closeChannels</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="connectOnConstruct" id="_connectOnConstruct">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_connectOnConstruct">#</a>
+		<code><a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#1017-1024" title="Go to source code">connectOnConstruct</a>( )</code>
+
+		<div class="description short">
+			<p>Should the connection be attempted during construction?</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Should the connection be attempted during construction?</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-PhpAmqpLib.Channel.AbstractChannel.html#methods">PhpAmqpLib\Channel\AbstractChannel</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-PhpAmqpLib.Channel.AbstractChannel.html#_dispatch">dispatch()</a>, 
+			<a href="class-PhpAmqpLib.Channel.AbstractChannel.html#_dispatch_to_handler">dispatch_to_handler()</a>, 
+			<a href="class-PhpAmqpLib.Channel.AbstractChannel.html#_getChannelId">getChannelId()</a>, 
+			<a href="class-PhpAmqpLib.Channel.AbstractChannel.html#_next_frame">next_frame()</a>, 
+			<a href="class-PhpAmqpLib.Channel.AbstractChannel.html#_prepare_method_frame">prepare_method_frame()</a>, 
+			<a href="class-PhpAmqpLib.Channel.AbstractChannel.html#_send_method_frame">send_method_frame()</a>, 
+			<a href="class-PhpAmqpLib.Channel.AbstractChannel.html#_wait">wait()</a>, 
+			<a href="class-PhpAmqpLib.Channel.AbstractChannel.html#_wait_content">wait_content()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary properties" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="LIBRARY_PROPERTIES" id="$LIBRARY_PROPERTIES">
+		<td class="attributes"><code>
+			public static 
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#19-36" title="Go to source code"><var>$LIBRARY_PROPERTIES</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$LIBRARY_PROPERTIES" class="anchor">#</a>
+				<code><span class="php-keyword1">array</span>(
+    <span class="php-quote">&quot;product&quot;</span> =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'S'</span>, <span class="php-quote">&quot;AMQPLib&quot;</span>),
+    <span class="php-quote">&quot;platform&quot;</span> =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'S'</span>, <span class="php-quote">&quot;PHP&quot;</span>),
+    <span class="php-quote">&quot;version&quot;</span> =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'S'</span>, <span class="php-quote">&quot;2.4&quot;</span>),
+    <span class="php-quote">&quot;information&quot;</span> =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'S'</span>, <span class="php-quote">&quot;&quot;</span>),
+    <span class="php-quote">&quot;copyright&quot;</span> =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'S'</span>, <span class="php-quote">&quot;&quot;</span>),
+    <span class="php-quote">&quot;capabilities&quot;</span> =&gt; <span class="php-keyword1">array</span>(
+        <span class="php-quote">'F'</span>,
+        <span class="php-keyword1">array</span>(
+            <span class="php-quote">'authentication_failure_close'</span> =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'t'</span>, <span class="php-keyword1">true</span>),
+            <span class="php-quote">'publisher_confirms'</span> =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'t'</span>, <span class="php-keyword1">true</span>),
+            <span class="php-quote">'consumer_cancel_notify'</span> =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'t'</span>, <span class="php-keyword1">true</span>),
+            <span class="php-quote">'exchange_exchange_bindings'</span> =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'t'</span>, <span class="php-keyword1">true</span>),
+            <span class="php-quote">'basic.nack'</span> =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'t'</span>, <span class="php-keyword1">true</span>),
+            <span class="php-quote">'connection.blocked'</span> =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'t'</span>, <span class="php-keyword1">true</span>)
+        )
+    )
+)</code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="channels" id="$channels">
+		<td class="attributes"><code>
+			public  
+			<code><a href="class-PhpAmqpLib.Channel.AMQPChannel.html">PhpAmqpLib\Channel\AMQPChannel</a>[]</code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#38-41" title="Go to source code"><var>$channels</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$channels" class="anchor">#</a>
+				<code><span class="php-keyword1">array</span>()</code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="version_major" id="$version_major">
+		<td class="attributes"><code>
+			protected  
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#43-46" title="Go to source code"><var>$version_major</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$version_major" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="version_minor" id="$version_minor">
+		<td class="attributes"><code>
+			protected  
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#48-51" title="Go to source code"><var>$version_minor</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$version_minor" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="server_properties" id="$server_properties">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#53-56" title="Go to source code"><var>$server_properties</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$server_properties" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="mechanisms" id="$mechanisms">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#58-61" title="Go to source code"><var>$mechanisms</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$mechanisms" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="locales" id="$locales">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#63-66" title="Go to source code"><var>$locales</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$locales" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="wait_tune_ok" id="$wait_tune_ok">
+		<td class="attributes"><code>
+			protected  
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#68-71" title="Go to source code"><var>$wait_tune_ok</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$wait_tune_ok" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="known_hosts" id="$known_hosts">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#73-76" title="Go to source code"><var>$known_hosts</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$known_hosts" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="input" id="$input">
+		<td class="attributes"><code>
+			protected  
+			<code><a href="class-PhpAmqpLib.Wire.AMQPReader.html">PhpAmqpLib\Wire\AMQPReader</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#78-81" title="Go to source code"><var>$input</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$input" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="vhost" id="$vhost">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#83-86" title="Go to source code"><var>$vhost</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$vhost" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="insist" id="$insist">
+		<td class="attributes"><code>
+			protected  
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#88-91" title="Go to source code"><var>$insist</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$insist" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="login_method" id="$login_method">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#93-96" title="Go to source code"><var>$login_method</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$login_method" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="login_response" id="$login_response">
+		<td class="attributes"><code>
+			protected  
+			<code><a href="class-PhpAmqpLib.Wire.AMQPWriter.html">PhpAmqpLib\Wire\AMQPWriter</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#98-101" title="Go to source code"><var>$login_response</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$login_response" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="locale" id="$locale">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#103-106" title="Go to source code"><var>$locale</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$locale" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="sock" id="$sock">
+		<td class="attributes"><code>
+			protected  
+			<code><a href="class-PhpAmqpLib.Wire.IO.SocketIO.html">PhpAmqpLib\Wire\IO\SocketIO</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#108-111" title="Go to source code"><var>$sock</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$sock" class="anchor">#</a>
+				<code><span class="php-keyword1">null</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="channel_max" id="$channel_max">
+		<td class="attributes"><code>
+			protected  
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#113-116" title="Go to source code"><var>$channel_max</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$channel_max" class="anchor">#</a>
+				<code><span class="php-num">65535</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="frame_max" id="$frame_max">
+		<td class="attributes"><code>
+			protected  
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#118-121" title="Go to source code"><var>$frame_max</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$frame_max" class="anchor">#</a>
+				<code><span class="php-num">131072</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="heartbeat" id="$heartbeat">
+		<td class="attributes"><code>
+			protected  
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#123-126" title="Go to source code"><var>$heartbeat</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$heartbeat" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="construct_params" id="$construct_params">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#128-132" title="Go to source code"><var>$construct_params</var></a>
+
+			<div class="description short">
+				<p>constructor parameters for clone</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>constructor parameters for clone</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$construct_params" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="close_on_destruct" id="$close_on_destruct">
+		<td class="attributes"><code>
+			protected  
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#134-138" title="Go to source code"><var>$close_on_destruct</var></a>
+
+			<div class="description short">
+				<p>close the connection in destructor</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>close the connection in destructor</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$close_on_destruct" class="anchor">#</a>
+				<code><span class="php-keyword1">true</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="is_connected" id="$is_connected">
+		<td class="attributes"><code>
+			protected  
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#140-144" title="Go to source code"><var>$is_connected</var></a>
+
+			<div class="description short">
+				<p>Maintain connection status</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Maintain connection status</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$is_connected" class="anchor">#</a>
+				<code><span class="php-keyword1">false</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="io" id="$io">
+		<td class="attributes"><code>
+			protected  
+			null|<code><a href="class-PhpAmqpLib.Wire.IO.AbstractIO.html">PhpAmqpLib\Wire\IO\AbstractIO</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#146-149" title="Go to source code"><var>$io</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$io" class="anchor">#</a>
+				<code><span class="php-keyword1">null</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="wait_frame_reader" id="$wait_frame_reader">
+		<td class="attributes"><code>
+			protected  
+			<code><a href="class-PhpAmqpLib.Wire.AMQPReader.html">PhpAmqpLib\Wire\AMQPReader</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PhpAmqpLib.Connection.AbstractConnection.html#151-154" title="Go to source code"><var>$wait_frame_reader</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$wait_frame_reader" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Properties inherited from <a href="class-PhpAmqpLib.Channel.AbstractChannel.html#properties">PhpAmqpLib\Channel\AbstractChannel</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-PhpAmqpLib.Channel.AbstractChannel.html#$PROTOCOL_CONSTANTS_CLASS"><var>$PROTOCOL_CONSTANTS_CLASS</var></a>, 
+			<a href="class-PhpAmqpLib.Channel.AbstractChannel.html#$amqp_protocol_header"><var>$amqp_protocol_header</var></a>, 
+			<a href="class-PhpAmqpLib.Channel.AbstractChannel.html#$auto_decode"><var>$auto_decode</var></a>, 
+			<a href="class-PhpAmqpLib.Channel.AbstractChannel.html#$channel_id"><var>$channel_id</var></a>, 
+			<a href="class-PhpAmqpLib.Channel.AbstractChannel.html#$connection"><var>$connection</var></a>, 
+			<a href="class-PhpAmqpLib.Channel.AbstractChannel.html#$debug"><var>$debug</var></a>, 
+			<a href="class-PhpAmqpLib.Channel.AbstractChannel.html#$dispatch_reader"><var>$dispatch_reader</var></a>, 
+			<a href="class-PhpAmqpLib.Channel.AbstractChannel.html#$frame_queue"><var>$frame_queue</var></a>, 
+			<a href="class-PhpAmqpLib.Channel.AbstractChannel.html#$methodMap"><var>$methodMap</var></a>, 
+			<a href="class-PhpAmqpLib.Channel.AbstractChannel.html#$method_queue"><var>$method_queue</var></a>, 
+			<a href="class-PhpAmqpLib.Channel.AbstractChannel.html#$msg_property_reader"><var>$msg_property_reader</var></a>, 
+			<a href="class-PhpAmqpLib.Channel.AbstractChannel.html#$protocolVersion"><var>$protocolVersion</var></a>, 
+			<a href="class-PhpAmqpLib.Channel.AbstractChannel.html#$protocolWriter"><var>$protocolWriter</var></a>, 
+			<a href="class-PhpAmqpLib.Channel.AbstractChannel.html#$waitHelper"><var>$waitHelper</var></a>, 
+			<a href="class-PhpAmqpLib.Channel.AbstractChannel.html#$wait_content_reader"><var>$wait_content_reader</var></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>
